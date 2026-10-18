@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideias de Organização de Ocupação</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'heading': ['Oswald', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            red: '#dc2626', // red-600
+                            dark: '#09090b', // zinc-950
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Efeito brutalista para botões */
+        .brutalist-btn {
+            box-shadow: 6px 6px 0px #dc2626; /* Sombra vermelha por padrão */
+            transition: all 0.2s ease;
+        }
+        .brutalist-btn.light-shadow {
+            box-shadow: 6px 6px 0px #ffffff;
+        }
+        .brutalist-btn:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 4px 4px 0px currentColor;
+        }
+        .brutalist-btn.light-shadow:hover {
+            box-shadow: 4px 4px 0px #ffffff;
+        }
+        .brutalist-btn:active {
+            transform: translate(6px, 6px);
+            box-shadow: 0px 0px 0px transparent;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L54EQJ2N41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-L54EQJ2N41");
+    </script>
+</head>
+<body class="font-body bg-zinc-100 antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- Aqui o Jekyll injeta o conteúdo específico de cada página -->
+    <p>Página com propostas de organização coletiva, comunicação interna e gestão de tarefas da ocupação.</p>
+
+
+    <footer class="bg-brand-dark text-zinc-500 text-center py-8 text-sm border-t-4 border-brand-red mt-auto">
+        Novo Castelo de Tocas • Ocupação Francisco Bernardo • Resistência e Moradia <br>
+        <span class="text-brand-red font-bold text-lg mt-2 inline-block">Lutar não é crime.</span>
+    </footer>
+
+    <script>
+        function copiarPix() {
+            const textArea = document.createElement("textarea");
+            textArea.value = "mlbparana99@gmail.com";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                const btn = document.getElementById('copyBtn');
+                if (btn) {
+                    const originalText = btn.innerText;
+                    btn.innerText = "✓ CHAVE COPIADA!";
+                    btn.classList.remove('bg-brand-red', 'hover:bg-red-700');
+                    btn.classList.add('bg-green-600', 'hover:bg-green-700');
+                    setTimeout(() => {
+                        btn.innerText = originalText;
+                        btn.classList.remove('bg-green-600', 'hover:bg-green-700');
+                        btn.classList.add('bg-brand-red', 'hover:bg-red-700');
+                    }, 3000);
+                }
+            } catch (err) {
+                console.error('Erro ao copiar', err);
+            } finally {
+                document.body.removeChild(textArea);
+            }
+        }
+    </script>
+</body>
+</html>
