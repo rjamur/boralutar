@@ -1,0 +1,10 @@
+title: Bora Lutar
+email: contato@boralutar.com.br
+description: >-
+  Site Bora Lutar para organização de ocupações e iniciativas de apoio.
+url: "https://boralutar.com.br"
+baseurl: ""
+lang: pt-BR
+markdown: kramdown
+theme: minima
+plugins: []
