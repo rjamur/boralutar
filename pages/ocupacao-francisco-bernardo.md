@@ -1,7 +1,147 @@
 ---
 layout: default
-title: Ocupação Francisco Bernardo
+title: "Bora Lutar - Ocupação Francisco Bernardo"
 permalink: /pages/ocupacao-francisco-bernardo/
 ---
 
-Espaço dedicado à história, atualizações e necessidades da Ocupação Francisco Bernardo.
+<!-- Hero Section: A Nova Casa -->
+<header class="relative bg-zinc-950 pt-24 pb-16 px-6 border-b-8 border-brand-red overflow-hidden min-h-[90svh] flex flex-col justify-center">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-red via-transparent to-transparent"></div>
+    
+    <div class="relative z-10 max-w-5xl mx-auto text-center">
+        <h1 class="font-heading text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] mb-6 uppercase drop-shadow-lg font-black">
+            O TRATOR NÃO <br/>
+            <span class="text-brand-red">ESMAGA SEMENTE.</span>
+        </h1>
+
+        <p class="font-heading text-2xl md:text-4xl text-zinc-300 uppercase mt-4 mb-8 tracking-wide border-y-2 border-zinc-800 py-4 inline-block px-4">
+            Bem-vindos ao Novo Castelo de Tocas.<br> A <span class="text-brand-red">Ocupação Francisco Bernardo</span> tem um novo teto.
+        </p>
+
+        <div class="max-w-3xl mx-auto bg-zinc-900 border-l-8 border-brand-red p-8 md:p-10 shadow-2xl mb-10 text-left relative mt-6">
+            <div class="absolute -top-4 left-6 bg-brand-red text-white font-heading font-bold uppercase px-4 py-1 text-sm tracking-widest shadow-lg border-2 border-zinc-900">
+                O Marco Histórico
+            </div>
+            
+            <h2 class="font-heading text-3xl md:text-5xl text-brand-red uppercase font-black mb-6 leading-tight border-b-2 border-zinc-800 pb-4">
+                Depois de 3 dias, a Ocupação Francisco Bernardo resiste e ressuscita.
+            </h2>
+
+            <p class="text-zinc-300 text-lg md:text-2xl leading-relaxed mb-6 font-medium">
+                Tentaram nos varrer do mapa. Acharam que o frio e a burocracia na frente da SPU iam quebrar a nossa espinha. Erraram. A <strong>Ocupação Francisco Bernardo</strong> respirou, caminhou e fincou a sua bandeira em um chão novo. 
+            </p>
+            <p class="text-white text-xl md:text-2xl leading-relaxed font-bold bg-brand-red p-4 inline-block">
+                Nós temos uma nova casa. Mas a guerra não acabou. Moradia é direito, não privilégio. E a nossa porta está aberta para quem sabe de que lado da trincheira deve estar.
+            </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6 my-8">
+            <a href="#endereco" class="brutalist-btn light-shadow w-full md:w-auto bg-brand-red text-white font-heading font-bold py-5 px-8 text-xl md:text-2xl uppercase border-2 border-brand-red flex items-center justify-center gap-2">
+                📍 VENHA CONHECER A NOVA TOCA
+            </a>
+            
+            <a href="#doar" class="brutalist-btn w-full md:w-auto bg-zinc-900 border-2 border-brand-red text-brand-red hover:bg-brand-red hover:text-white hover:border-white font-heading font-bold py-5 px-8 text-xl md:text-2xl uppercase flex items-center justify-center gap-2">
+                ✊ CONTINUE APOIANDO A LUTA
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- FAIXA DO ÁLBUM DE FOTOS -->
+<section class="bg-brand-red text-white py-12 px-4 border-b-[12px] border-brand-dark">
+    <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+        <h2 class="font-heading text-3xl md:text-5xl font-bold uppercase mb-6 drop-shadow-md">
+            A rua não mente. Veja com seus próprios olhos.
+        </h2>
+        <p class="text-lg md:text-xl font-medium mb-8 max-w-2xl text-red-100">
+            Acompanhe os registos da nossa luta, da lona no asfalto até à construção do nosso novo teto. A história a ser escrita em tempo real.
+        </p>
+        <a href="https://photos.app.goo.gl/WP4WxY1YSheZ5Lgp7" target="_blank" rel="noopener noreferrer" 
+           class="brutalist-btn bg-white text-brand-red font-heading font-bold text-2xl uppercase py-4 px-10 border-4 border-brand-dark inline-flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            Acessar Álbum de Fotos
+        </a>
+    </div>
+</section>
+
+<!-- SEÇÕES DE AÇÃO -->
+<section class="bg-zinc-200 py-16 px-6">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div id="endereco" class="bg-white border-4 border-brand-dark p-8 scroll-mt-10 flex flex-col h-full">
+            <h3 class="font-heading text-3xl font-bold uppercase text-brand-dark mb-4 border-b-4 border-brand-red pb-2 inline-block self-start">Nossa Nova Toca</h3>
+            <p class="text-zinc-700 text-lg mb-4">A resistência tem um novo endereço oficial. Venha somar forças, tomar um café e entender como funciona a organização popular na prática.</p>
+            <div class="bg-brand-dark text-white p-5 mb-6 border-l-4 border-brand-red">
+                <p class="font-heading font-bold uppercase text-brand-red mb-1 tracking-wider text-sm">Ocupar é um dever constitucional:</p>
+                <p class="text-zinc-300 font-medium">O prédio estava <strong class="text-white">abandonado há mais de dez anos</strong>, não cumprindo a sua Função Social, como diz a nossa Constituição Federal.</p>
+            </div>
+            <div class="bg-zinc-100 p-6 text-center border-4 border-brand-red mt-auto">
+                <p class="font-heading font-bold text-brand-dark text-2xl uppercase mb-3">📍 Localização</p>
+                <p class="text-zinc-900 font-bold text-xl mb-1">Alameda Augusto Stellfeld, 82</p>
+                <p class="text-zinc-600 text-lg font-medium mb-6">São Francisco - Curitiba - PR</p>
+                <a href="https://maps.app.goo.gl/uZQHzeBj34WLHFLf6?g_st=ac" target="_blank" rel="noopener noreferrer" class="brutalist-btn bg-brand-dark text-white font-bold uppercase py-4 px-6 text-lg hover:bg-zinc-800 w-full inline-block">Abrir no Google Maps</a>
+            </div>
+        </div>
+
+        <div id="doar" class="bg-zinc-900 border-4 border-brand-red p-8 text-white scroll-mt-10 flex flex-col h-full">
+            <h3 class="font-heading text-3xl font-bold uppercase text-brand-red mb-4 border-b-4 border-white pb-2 inline-block self-start">Sustente a Luta</h3>
+            <p class="text-zinc-300 text-lg mb-6 flex-grow">Uma nova casa exige estrutura. Apoie a estruturação do Novo Castelo de Tocas contribuindo com o que puder.</p>
+            <div class="bg-brand-dark border-2 border-zinc-700 p-6 flex flex-col items-center justify-between gap-6 text-center mt-auto">
+                <div class="text-zinc-100 font-mono text-xl md:text-2xl break-all">
+                    <span id="pixKey" class="font-bold">mlbparana99@gmail.com</span>
+                </div>
+                <button onclick="copiarPix()" id="copyBtn" class="bg-brand-red hover:bg-red-700 text-white font-bold uppercase text-lg py-4 px-8 transition-colors w-full brutalist-btn light-shadow">Copiar Chave PIX</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- MANIFESTO ORIGINAL COM MARKDOWN PURO DENTRO DA DIV -->
+<main class="bg-white text-zinc-900 py-20 px-6 md:px-12">
+    <article class="max-w-4xl mx-auto space-y-6 text-lg md:text-xl font-medium text-zinc-700 leading-relaxed">
+        
+<h2 class="font-heading text-4xl md:text-6xl font-bold uppercase mb-12 border-l-8 border-brand-dark pl-6 leading-tight text-zinc-900">
+    A Máquina de Moer Gente e o Legado da <span class="text-brand-red">Francisco Bernardo</span>
+</h2>
+
+O sistema tem um nome muito polido e higienizado para a barbárie: **"Reintegração de Posse"**.
+
+O papel timbrado do juiz e a assinatura do Estado servem para anestesiar a sociedade. Mas desça para o asfalto. Olhe nos olhos das famílias. Lá, o nome disso é violência, é desespero, é trator passando por cima do teto de quem não tem pra onde ir. É a polícia sendo usada como milícia particular da especulação imobiliária.
+
+<p class="bg-zinc-100 p-6 border-l-4 border-brand-red text-zinc-900 font-bold">
+    O capitalismo é um manicômio invisível que prioriza o tijolo ocioso e criminaliza a carne que sangra. Para o sistema, a terra parada esperando valorizar vale mais do que a dignidade humana. Quem ousa ocupar o abandono para simplesmente existir, vira "invasor".
+</p>
+
+Mas a rua ensina outra lógica. O evangelho maltrapilho, aquele que não senta na mesa dos fariseus e dos donos do poder, esteve na lona da Francisco Bernardo, pisado na terra, do lado de quem sofreu a ameaça do cassetete. E hoje constrói um novo castelo.
+
+<blockquote class="font-heading text-2xl md:text-3xl text-brand-dark my-10 italic border-y-4 border-zinc-200 py-8 text-center">
+    "Como Paulo Freire nos ensina, a nossa emancipação não se dá no silêncio, mas na práxis. A educação da rua cobra posicionamento."
+</blockquote>
+
+O Racionais já avisou que a corda sempre arrebenta pro lado mais fraco, a não ser que a gente trance essa corda e faça dela uma rede. A Luta não é teoria de gabinete, é trincheira. O nosso <strong class="text-brand-red uppercase">Ubuntu</strong> — *Eu sou porque nós somos* — tem que sair do discurso e ir pro enfrentamento.
+
+<p class="text-2xl text-brand-dark font-black uppercase mt-12 mb-4">
+    A apatia é a dopamina do opressor. Não silencie. Não vire o rosto.
+</p>
+
+Nós somos a barricada. Descubra o que está acontecendo, entenda a urgência e saiba como colocar o seu corpo, a sua voz e a sua rede de apoio nessa linha de frente.
+
+<p class="font-bold text-2xl text-brand-red uppercase mb-12">
+    Não deixe o sistema calar quem ousa viver.
+</p>
+
+<div class="mt-12 pt-8 border-t-2 border-zinc-200 flex flex-col items-center gap-4">
+    <a href="https://boralutar.com.br/ocupa" target="_blank" rel="noopener noreferrer" class="bg-brand-dark hover:bg-zinc-800 text-white font-heading font-bold text-xl uppercase py-4 px-10 border-b-4 border-brand-red transition-colors text-center w-full md:w-auto">
+        👉 Acesse, compartilhe e junte-se ao Bora Lutar
+    </a>
+    
+    <a href="/primeiro-castelo" class="text-zinc-600 hover:text-brand-red font-bold underline transition-colors text-center mt-4 text-lg">
+        ⏪ Relembre a história do Primeiro Castelo
+    </a>
+</div>
+
+    </article>
+</main>
