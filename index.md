@@ -134,7 +134,7 @@ Nós somos a barricada. Descubra o que está acontecendo, entenda a urgência e 
 </p>
 
 <div class="mt-12 pt-8 border-t-2 border-zinc-200 flex flex-col items-center gap-4">
-    <a href="https://boralutar.com.br/ocupa" target="_blank" rel="noopener noreferrer" class="bg-brand-dark hover:bg-zinc-800 text-white font-heading font-bold text-xl uppercase py-4 px-10 border-b-4 border-brand-red transition-colors text-center w-full md:w-auto">
+    <a href="/ocupa" target="_blank" rel="noopener noreferrer" class="bg-brand-dark hover:bg-zinc-800 text-white font-heading font-bold text-xl uppercase py-4 px-10 border-b-4 border-brand-red transition-colors text-center w-full md:w-auto">
         👉 Acesse, compartilhe e junte-se ao Bora Lutar
     </a>
     

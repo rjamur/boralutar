@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora Lutar - Gerador de EPUB (Histórias)</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- JSZip for creating the EPUB archive -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    
+    <style>
+        /* Custom styles for the app UI */
+        :root {
+            --primary-color: #e53e3e; /* A strong red color suitable for 'Lutar' */
+            --bg-color: #f7fafc;
+            --text-color: #2d3748;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Loading animation styles */
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--primary-color);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            display: none; /* Hidden by default */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-white rounded-xl shadow-2xl p-8 max-w-2xl w-full text-center">
+        
+        <div class="mb-8">
+            <svg class="w-16 h-16 mx-auto text-red-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Bora Lutar</h1>
+            <h2 class="text-xl text-gray-600">Seção 1: Contos e Histórias</h2>
+            <p class="mt-4 text-gray-500 text-sm max-w-md mx-auto">
+                Clique no botão abaixo para gerar um arquivo EPUB contendo todas as histórias da Seção 1. O layout será formatado para uma leitura confortável em qualquer e-reader.
+            </p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-4 mt-8">
+            <button id="generateBtn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Gerar e Baixar EPUB
+            </button>
+            <div id="loading" class="loader mt-2"></div>
+            <p id="statusMessage" class="text-sm font-medium mt-2 opacity-0 transition-opacity duration-300"></p>
+        </div>
+        
+        <div class="mt-8 pt-6 border-t border-gray-100 text-xs text-gray-400">
+            * Para inserir o conteúdo real, edite o objeto <code>storiesData</code> no código-fonte desta página.
+        </div>
+    </div>
+
+    <script>
+        /**
+         * IMPORTANT: Since the actual website content could not be accessed, 
+         * you must replace the content in this array with the actual text 
+         * from the "Bora Lutar" stories.
+         */
+        const bookData = {
+            title: "Bora Lutar - Contos e Histórias",
+            author: "Bora Lutar",
+            language: "pt-BR",
+            coverText: "Bora Lutar"
+        };
+
+        const storiesData = [
+            {
+                id: "capitulo1",
+                title: "O Despertar da Força Interior",
+                content: `
+                    <p>Todo começo é difícil, mas é no primeiro passo que a jornada se revela. Quando olhamos para a montanha que precisamos escalar, muitas vezes a magnitude do desafio nos assusta.</p>
+                    <p>No entanto, a história não é feita por aqueles que recuam perante o medo, mas por aqueles que, apesar do medo, decidem lutar.</p>
+                    <p>Este conto serve como um lembrete: a força que você procura já está dentro de você, apenas esperando o momento certo para ser despertada. Bora lutar!</p>
+                `
+            },
+            {
+                id: "capitulo2",
+                title: "A Resiliência no Tatame da Vida",
+                content: `
+                    <p>Cair faz parte do processo. Não há um único campeão que não tenha provado o gosto amargo da derrota no chão.</p>
+                    <p>A verdadeira vitória não é nunca cair, mas levantar-se cada vez mais forte, mais sábio e mais determinado.</p>
+                    <p>As cicatrizes que carregamos são medalhas de honra que mostram onde estivemos e o que superamos. Continue respirando, continue lutando, continue avançando.</p>
+                `
+            },
+            {
+                id: "capitulo3",
+                title: "O Poder da Comunidade",
+                content: `
+                    <p>Ninguém vence uma guerra sozinho. Atrás de cada lutador existe uma equipe, um mestre, uma família que o apoia.</p>
+                    <p>No Bora Lutar, aprendemos que a nossa força é multiplicada quando nos unimos. Quando um cai, o outro ajuda a levantar.</p>
+                    <p>A união é o nosso maior escudo e a nossa arma mais poderosa contra as adversidades do mundo.</p>
+                `
+            }
+        ];
+
+        // Utility function to escape XML characters
+        function escapeXml(unsafe) {
+            return unsafe.replace(/[<>&'"]/g, function (c) {
+                switch (c) {
+                    case '<': return '&lt;';
+                    case '>': return '&gt;';
+                    case '&': return '&amp;';
+                    case '\'': return '&apos;';
+                    case '"': return '&quot;';
+                }
+            });
+        }
+
+        // Function to create standard EPUB CSS
+        function getEPubCSS() {
+            return `
+                body {
+                    font-family: serif;
+                    margin: 5%;
+                    text-align: justify;
+                    line-height: 1.5;
+                }
+                h1 {
+                    text-align: center;
+                    font-size: 2em;
+                    margin-bottom: 1em;
+                    page-break-before: always;
+                    color: #333;
+                }
+                h2 {
+                    text-align: center;
+                    color: #444;
+                    margin-top: 2em;
+                }
+                p {
+                    text-indent: 1.5em;
+                    margin-top: 0;
+                    margin-bottom: 0.5em;
+                }
+                .cover-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    text-align: center;
+                }
+                .cover-title {
+                    font-size: 3em;
+                    font-weight: bold;
+                    color: #e53e3e; /* Bora Lutar Red */
+                    text-transform: uppercase;
+                }
+                .cover-subtitle {
+                    font-size: 1.5em;
+                    color: #666;
+                    margin-top: 1em;
+                }
+            `;
+        }
+
+        // Generate the container.xml file required by EPUB format
+        function generateContainerXml() {
+            return `<?xml version="1.0" encoding="UTF-8"?>
+<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">
+    <rootfiles>
+        <rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/>
+    </rootfiles>
+</container>`;
+        }
+
+        // Generate the content.opf file (manifest and spine)
+        function generateOpf() {
+            let manifestItems = `<item id="style" href="style.css" media-type="text/css"/>\n`;
+            manifestItems += `<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>\n`;
+            manifestItems += `<item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>\n`;
+            
+            let spineItems = `<itemref idref="cover"/>\n`;
+
+            storiesData.forEach((story, index) => {
+                manifestItems += `<item id="${story.id}" href="${story.id}.xhtml" media-type="application/xhtml+xml"/>\n`;
+                spineItems += `<itemref idref="${story.id}"/>\n`;
+            });
+
+            return `<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:title>${escapeXml(bookData.title)}</dc:title>
+        <dc:creator opf:role="aut">${escapeXml(bookData.author)}</dc:creator>
+        <dc:language>${bookData.language}</dc:language>
+        <dc:identifier id="BookId">urn:uuid:${crypto.randomUUID()}</dc:identifier>
+    </metadata>
+    <manifest>
+${manifestItems}    </manifest>
+    <spine toc="ncx">
+${spineItems}    </spine>
+</package>`;
+        }
+
+        // Generate the Table of Contents (toc.ncx)
+        function generateNcx() {
+            let navPoints = `<navPoint id="navPoint-cover" playOrder="1">
+            <navLabel><text>Capa</text></navLabel>
+            <content src="cover.xhtml"/>
+        </navPoint>\n`;
+
+            storiesData.forEach((story, index) => {
+                navPoints += `        <navPoint id="navPoint-${index + 2}" playOrder="${index + 2}">
+            <navLabel><text>${escapeXml(story.title)}</text></navLabel>
+            <content src="${story.id}.xhtml"/>
+        </navPoint>\n`;
+            });
+
+            return `<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+    <head>
+        <meta name="dtb:uid" content="urn:uuid:${crypto.randomUUID()}"/>
+        <meta name="dtb:depth" content="1"/>
+        <meta name="dtb:totalPageCount" content="0"/>
+        <meta name="dtb:maxPageNumber" content="0"/>
+    </head>
+    <docTitle>
+        <text>${escapeXml(bookData.title)}</text>
+    </docTitle>
+    <navMap>
+${navPoints}    </navMap>
+</ncx>`;
+        }
+
+        // Generate a standard XHTML file for a chapter
+        function createChapterHtml(title, bodyContent) {
+            return `<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>${escapeXml(title)}</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <h1>${escapeXml(title)}</h1>
+    ${bodyContent}
+</body>
+</html>`;
+        }
+
+        // Generate the Cover XHTML
+        function createCoverHtml() {
+            return `<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Capa</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="cover-container">
+        <div class="cover-title">${escapeXml(bookData.coverText)}</div>
+        <div class="cover-subtitle">Contos e Histórias</div>
+    </div>
+</body>
+</html>`;
+        }
+
+        // Main function to assemble the EPUB using JSZip
+        async function createAndDownloadEPUB() {
+            const btn = document.getElementById('generateBtn');
+            const loader = document.getElementById('loading');
+            const status = document.getElementById('statusMessage');
+
+            // UI feedback
+            btn.disabled = true;
+            btn.classList.add('opacity-50', 'cursor-not-allowed');
+            loader.style.display = 'block';
+            status.textContent = 'Construindo o livro...';
+            status.className = 'text-sm font-medium mt-2 text-blue-500 opacity-100 transition-opacity duration-300';
+
+            try {
+                const zip = new JSZip();
+
+                // 1. Add mimetype file (must be uncompressed, first file)
+                zip.file("mimetype", "application/epub+zip");
+
+                // 2. Add META-INF/container.xml
+                const metaInf = zip.folder("META-INF");
+                metaInf.file("container.xml", generateContainerXml());
+
+                // 3. Add OEBPS content folder
+                const oebps = zip.folder("OEBPS");
+
+                // Add CSS
+                oebps.file("style.css", getEPubCSS());
+
+                // Add Cover
+                oebps.file("cover.xhtml", createCoverHtml());
+
+                // Add Stories
+                storiesData.forEach(story => {
+                    const xhtml = createChapterHtml(story.title, story.content);
+                    oebps.file(`${story.id}.xhtml`, xhtml);
+                });
+
+                // Add OPF (Manifest/Metadata)
+                oebps.file("content.opf", generateOpf());
+
+                // Add NCX (Table of Contents)
+                oebps.file("toc.ncx", generateNcx());
+
+                // Generate the Zip Blob
+                status.textContent = 'Gerando arquivo .epub...';
+                
+                const content = await zip.generateAsync({ 
+                    type: "blob",
+                    mimeType: "application/epub+zip",
+                    compression: "DEFLATE",
+                    compressionOptions: {
+                        level: 9
+                    }
+                });
+
+                // Trigger download
+                const url = window.URL.createObjectURL(content);
+                const a = document.createElement("a");
+                a.style.display = "none";
+                a.href = url;
+                a.download = "Bora_Lutar_Historias.epub";
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+                document.body.removeChild(a);
+
+                // Success feedback
+                status.textContent = 'Download concluído com sucesso!';
+                status.className = 'text-sm font-medium mt-2 text-green-600 opacity-100 transition-opacity duration-300';
+                
+            } catch (error) {
+                console.error("Error generating EPUB:", error);
+                status.textContent = 'Erro ao gerar o arquivo. Verifique o console.';
+                status.className = 'text-sm font-medium mt-2 text-red-600 opacity-100 transition-opacity duration-300';
+            } finally {
+                // Reset UI
+                setTimeout(() => {
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-50', 'cursor-not-allowed');
+                    loader.style.display = 'none';
+                    setTimeout(() => {
+                        status.classList.remove('opacity-100');
+                        status.classList.add('opacity-0');
+                    }, 3000);
+                }, 1000);
+            }
+        }
+
+        // Attach event listener
+        document.getElementById('generateBtn').addEventListener('click', createAndDownloadEPUB);
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartão A6 - O Bug do Estado</title>
+    <style>
+        /* Configuração exata para impressão A6 em alta qualidade */
+        @page {
+            size: A6 portrait;
+            margin: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .cartao {
+            width: 105mm;
+            height: 148mm;
+            padding: 12mm;
+            box-sizing: border-box;
+            border: 2px dashed #cccccc; /* Linha de corte se imprimir em A4 */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .alerta {
+            background-color: #000000;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 5px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .titulo {
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+        .texto {
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #333333;
+        }
+        .instrucao-box {
+            border: 2px solid #000000;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .instrucao-texto {
+            font-size: 15px;
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+        .qr-container {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        .qr-image {
+            width: 50mm;
+            height: 50mm;
+            image-rendering: pixelated; /* Mantém os quadrados do QR Code nítidos na impressão */
+        }
+        .rodape {
+            font-size: 12px;
+            font-weight: bold;
+            font-family: monospace;
+            margin-top: auto;
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L54EQJ2N41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-L54EQJ2N41");
+    </script>
+</head>
+<body>
+
+    <div class="cartao">
+        
+        <div>
+            <div class="alerta">Aconteceu em Curitiba</div>
+            <h1 class="titulo">O BUG DO<br>ESTADO</h1>
+            
+            <p class="texto">
+                Trancaram meu portão. Roubaram minha casa e meu sofá. Quando chamei a PM, o Estado lavou as mãos.
+            </p>
+        </div>
+
+        <div class="instrucao-box">
+            <div class="instrucao-texto">
+                📷 ABRA A CÂMERA DO CELULAR E APONTE PARA O QUADRADO ABAIXO:
+            </div>
+            
+            <div class="qr-container">
+                <!-- A imagem carrega direto da mesma pasta -->
+                <img src="qrcode_boralutar.com.br.png" alt="QR Code para o manifesto" class="qr-image">
+            </div>
+        </div>
+
+        <div class="rodape">
+            Acesse direto: boralutar.com.br
+        </div>
+
+    </div>
+
+</body>
+</html>

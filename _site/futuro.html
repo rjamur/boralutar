@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora Lutar | A verdade que liberta</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tipografia Brutalista -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* Variáveis e setup minimalista */
+        :root {
+            --font-ui: 'Inter', sans-serif;
+            --font-tech: 'Space Mono', monospace;
+        }
+        
+        body {
+            font-family: var(--font-ui);
+            background-color: #09090b; /* zinc-950 */
+            color: #e4e4e7; /* zinc-200 */
+        }
+
+        .font-tech { font-family: var(--font-tech); }
+
+        /* Estilo de seleção de texto afiado */
+        ::selection {
+            background-color: #e4e4e7;
+            color: #09090b;
+        }
+
+        /* Classes utilitárias brutalistas para as bordas dos cards */
+        .brutalist-border {
+            border: 2px solid #27272a; /* zinc-800 */
+            transition: all 0.2s ease-in-out;
+        }
+        .brutalist-border:hover {
+            border-color: #e4e4e7; /* zinc-200 */
+            transform: translate(-2px, -2px);
+            box-shadow: 4px 4px 0px 0px #e4e4e7;
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L54EQJ2N41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-L54EQJ2N41");
+    </script>
+</head>
+<body class="flex flex-col min-h-screen selection:bg-zinc-100 selection:text-black">
+
+    <!-- HEADER / NAVEGAÇÃO -->
+    <!-- Django Dica: Separar em templates/partials/_header.html -->
+    <header class="w-full border-b border-zinc-800 px-4 md:px-8 py-6 flex justify-between items-center">
+        <a href="/" class="font-tech font-bold text-xl tracking-tighter uppercase text-white hover:text-zinc-400 transition-colors">
+            [Bora Lutar]
+        </a>
+        <nav class="font-tech text-xs tracking-widest uppercase text-zinc-500">
+            <span>Sistema_Ativo</span>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="flex-grow">
+
+        <!-- 1. HERO SECTION (O Manifesto) -->
+        <!-- Django Dica: Separar em templates/partials/_hero.html -->
+        <section class="px-4 md:px-8 py-20 md:py-32 border-b border-zinc-800 flex flex-col justify-center items-start">
+            <div class="max-w-5xl">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.9] text-white mb-8">
+                    Literatura, <br/>
+                    <span class="text-zinc-600">Sobrevivência e Alforria.</span>
+                </h1>
+                <p class="font-tech text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed">
+                    Histórias de sobrevivência, tecnologia social e o caminho forjado a frio para fora do manicômio invisível.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. DESTAQUE DINÂMICO (Na Trincheira Hoje) -->
+        <!-- Django Dica: Separar em templates/partials/_destaque.html -->
+        <!-- Este bloco pode receber contexto do views.py com a última história publicada -->
+        <section class="px-4 md:px-8 py-12 md:py-20 border-b border-zinc-800 bg-zinc-950">
+            <div class="max-w-5xl">
+                
+                <div class="relative border-4 border-zinc-200 p-6 md:p-12 group bg-zinc-900">
+                    <!-- Badge/Etiqueta Brutalista flutuando na borda -->
+                    <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-0 md:translate-x-4 bg-zinc-200 text-black font-tech text-xs font-bold px-3 py-1 uppercase tracking-widest border-2 border-black">
+                        Na Trincheira Hoje
+                    </div>
+                    
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight tracking-tight">
+                        Destaque: <br class="hidden md:block"/> O Castelo de Tocas
+                    </h2>
+                    
+                    <p class="text-zinc-400 text-lg md:text-xl mb-8 max-w-3xl">
+		    	A ocupação Francisco Bernardo
+                                          </p>
+                    
+                    <!-- Botão Brutalista -->
+                    <a href="ocupa/" class="inline-flex items-center gap-3 bg-white text-black font-bold uppercase tracking-wider px-8 py-4 text-sm md:text-base hover:bg-zinc-300 transition-colors border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-zinc-900">
+                        <span>Ler o destaque</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. O MAPA (Grid de Navegação) -->
+        <!-- Django Dica: Separar em templates/partials/_mapa.html -->
+        <section class="px-4 md:px-8 py-16 md:py-24">
+            <div class="max-w-6xl mx-auto">
+                
+                <h3 class="font-tech text-sm text-zinc-500 uppercase tracking-widest mb-10 border-b border-zinc-800 pb-4">
+                    // Mapeamento do Sistema
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Card 1 -->
+                    <a href="/historias/" class="brutalist-border bg-zinc-950 p-8 flex flex-col h-full group block">
+                        <div class="font-tech text-zinc-600 text-xs mb-4">01</div>
+                        <h4 class="text-2xl font-bold text-white mb-4 uppercase tracking-tight group-hover:text-white transition-colors">
+                            Histórias de Libertação
+                        </h4>
+                        <p class="text-zinc-400 text-sm md:text-base leading-relaxed mt-auto">
+                            O manual de alforria contra abusos e manipulações. Relatos reais e dissecados para abrir os olhos.
+                        </p>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="ocupa/" class="brutalist-border bg-zinc-950 p-8 flex flex-col h-full group block">
+                        <div class="font-tech text-zinc-600 text-xs mb-4">02</div>
+                        <h4 class="text-2xl font-bold text-white mb-4 uppercase tracking-tight group-hover:text-white transition-colors">
+                            A Ocupação
+                        </h4>
+                        <p class="text-zinc-400 text-sm md:text-base leading-relaxed mt-auto">
+                            A realidade crua, o chão de cimento e o Castelo de Tocas. Sobrevivência e comunidade fora da bolha.
+                        </p>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="https://rafajamur.com.br" target="_blank" rel="noopener noreferrer" class="brutalist-border bg-zinc-950 p-8 flex flex-col h-full group block">
+                        <div class="font-tech text-zinc-600 text-xs mb-4">03</div>
+                        <h4 class="text-2xl font-bold text-white mb-4 uppercase tracking-tight group-hover:text-white transition-colors">
+                            Quem sou
+                        </h4>
+                        <p class="text-zinc-400 text-sm md:text-base leading-relaxed mt-auto">
+                            Tecnologia, código aberto e, quem sabe, soluções. Construindo pontes através de servidores.
+                        </p>
+                    </a>
+
+                </div>
+
+                <div class="mt-12 pt-12 border-t border-zinc-800">
+                    <h4 class="font-tech text-xs text-zinc-600 uppercase tracking-widest mb-6">// Acesso ao Sistema</h4>
+                    <div class="flex flex-wrap gap-4">
+                    <a href="/faq" class="text-zinc-400 hover:text-white underline underline-offset-4 text-sm font-tech">FAQ do Coelho</a>
+                    <a href="/termos" class="text-zinc-400 hover:text-white underline underline-offset-4 text-sm font-tech">Termos de Uso</a>
+                    <a href="/metodologia" class="text-zinc-400 hover:text-white underline underline-offset-4 text-sm font-tech">Metodologia</a>
+                </div>
+        </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 4. RODAPÉ (Footer) -->
+    <!-- Django Dica: Separar em templates/partials/_footer.html -->
+    <footer class="w-full border-t border-zinc-800 px-4 md:px-8 py-10">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            
+            <p class="font-tech text-xs md:text-sm text-zinc-500 uppercase tracking-wider">
+                Desenvolvido com suor e código aberto por <span class="text-zinc-300">Rafa Jamur</span>.
+            </p>
+            
+            <div class="flex gap-6 font-tech text-xs uppercase tracking-wider">
+                <a href="https://github.com/rjamur/" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-white transition-colors">GitHub</a>
+                <a href="#" class="text-zinc-500 hover:text-white transition-colors">RSS</a>
+                <a href="mailto:jamur@ufpr.br" class="text-zinc-500 hover:text-white transition-colors">Contato</a>
+            </div>
+            
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivo Central | Boralutar</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --font-ui: 'Inter', sans-serif;
+            --font-tech: 'Space Mono', monospace;
+        }
+        
+        body {
+            font-family: var(--font-ui);
+            background-color: #09090b; /* zinc-950 */
+            color: #d4d4d8; /* zinc-300 */
+        }
+
+        .font-ui { font-family: var(--font-ui); }
+        .font-tech { font-family: var(--font-tech); }
+
+        ::selection {
+            background-color: #dc2626;
+            color: #ffffff;
+        }
+    </style>
+
+   <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L54EQJ2N41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-L54EQJ2N41");
+    </script>
+
+    
+</head>
+<body class="flex flex-col min-h-screen selection:bg-red-600 selection:text-white">
+
+    <!-- HEADER -->
+    <header class="w-full py-6 px-4 border-b border-zinc-800 flex justify-between items-center bg-zinc-950 sticky top-0 z-10">
+        <a href="../index.html" class="font-tech text-zinc-500 text-sm tracking-widest hover:text-white transition-colors uppercase">
+            &larr; Sistema Principal
+        </a>
+        <div class="font-tech text-xs text-red-500 uppercase tracking-widest flex items-center gap-2">
+            <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+            Acesso Aberto
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-5xl mx-auto w-full px-4 sm:px-6 py-12 md:py-20">
+        
+        <!-- CABEÇALHO DO ARQUIVO -->
+        <header class="mb-16">
+            <h1 class="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter uppercase leading-none">
+                Registros <br>
+                <span class="text-zinc-600">do Sistema</span>
+            </h1>
+            <p class="font-tech text-zinc-400 text-sm md:text-base max-w-2xl leading-relaxed border-l-2 border-red-600 pl-4">
+                O arquivo central. Aqui documentamos a anatomia do cativeiro, a tecnologia da sobrevivência e a práxis da alforria.
+            </p>
+        </header>
+
+        <!-- CATEGORIA 01: A TRILHA DA SOBREVIVÊNCIA (Ordem Cronológica Real) -->
+        <section class="mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="font-tech text-sm text-red-500/70 uppercase tracking-widest font-bold">
+                    // 01. A Trilha Principal
+                </h2>
+                <div class="h-px bg-zinc-800 flex-grow"></div>
+            </div>
+
+            <div class="flex flex-col border-y border-zinc-800 divide-y divide-zinc-800">
+                
+                <!-- 1. O Ponto Cego -->
+                <a href="o-nome-do-monstro-gaslighting/index.html" class="py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-zinc-900/40 transition-colors px-2 md:px-4 -mx-2 md:-mx-4 rounded">
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-700 text-[10px] text-zinc-400 font-tech uppercase tracking-widest rounded-sm">[RELATO]</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">O Ponto Cego e o Nome do Monstro</h3>
+                        <p class="text-zinc-500 mt-2 text-sm md:text-base">Como o gaslighting rouba a sua realidade e como retomar o controle.</p>
+                    </div>
+                </a>
+
+                <!-- 2. O Manicômio Invisível -->
+                <a href="o-manicomio-invisivel/index.html" class="py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-zinc-900/40 transition-colors px-2 md:px-4 -mx-2 md:-mx-4 rounded">
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-700 text-[10px] text-zinc-400 font-tech uppercase tracking-widest rounded-sm">[RELATO]</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">O Manicômio Invisível</h3>
+                        <p class="text-zinc-500 mt-2 text-sm md:text-base">Uma jornada sobre limites, a engenharia de prompts e a arte de fazer a máquina revelar a verdade.</p>
+                    </div>
+                </a>
+
+                <!-- 3. A Anatomia do Cativeiro -->
+                <a href="a-anatomia-do-cativeiro/index.html" class="py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-zinc-900/40 transition-colors px-2 md:px-4 -mx-2 md:-mx-4 rounded">
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-700 text-[10px] text-zinc-400 font-tech uppercase tracking-widest rounded-sm">[RELATO]</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">A Anatomia do Cativeiro e o Jejum do Asfalto</h3>
+                        <p class="text-zinc-500 mt-2 text-sm md:text-base">O Hoovering, a síndrome do salvador e a terceirização da culpa familiar.</p>
+                    </div>
+                </a>
+
+                <!-- 4. O Chá de Culpa -->
+                <a href="o-cha-de-culpa/index.html" class="py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-zinc-900/40 transition-colors px-2 md:px-4 -mx-2 md:-mx-4 rounded">
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-700 text-[10px] text-zinc-400 font-tech uppercase tracking-widest rounded-sm">[RELATO]</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">O Chá de Culpa e a Sala de Vinagre</h3>
+                        <p class="text-zinc-500 mt-2 text-sm md:text-base">A química do bode expiatório e a recusa do afeto transacional.</p>
+                    </div>
+                </a>
+
+                <!-- 5. O Reflexo no Lago -->
+                <a href="o-reflexo-no-lago-de-gelo/index.html" class="py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-zinc-900/40 transition-colors px-2 md:px-4 -mx-2 md:-mx-4 rounded">
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-700 text-[10px] text-zinc-400 font-tech uppercase tracking-widest rounded-sm">[RELATO]</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">O Reflexo no Lago de Gelo</h3>
+                        <p class="text-zinc-500 mt-2 text-sm md:text-base">O curto-circuito da amígdala e o botão de segurança do órfão.</p>
+                    </div>
+                </a>
+
+                <!-- 6. A Máquina de Moléculas (Último/Atual) -->
+                <a href="a-maquina-de-moleculas/index.html" class="py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-zinc-900/40 transition-colors px-2 md:px-4 -mx-2 md:-mx-4 rounded">
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-2 py-0.5 bg-red-900/30 border border-red-700/50 text-[10px] text-red-400 font-tech uppercase tracking-widest rounded-sm">[META_REGISTRO]</span>
+                            <span class="text-red-500 font-tech text-[10px] uppercase font-bold tracking-widest flex items-center gap-1">
+                                <span class="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"></span> NOVO
+                            </span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">A Máquina de Moléculas e a Anatomia da Graça</h3>
+                        <p class="text-zinc-500 mt-2 text-sm md:text-base">A história de um intelectual desmontado, uma enfermeira de trincheira e o escândalo do amor imerecido.</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- CATEGORIA 02: TECNOLOGIA SOCIAL & MANIFESTOS -->
+        <section class="mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="font-tech text-sm text-zinc-500 uppercase tracking-widest font-bold">
+                    // 02. Extensão e Manifestos
+                </h2>
+                <div class="h-px bg-zinc-800 flex-grow"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <a href="kezya/index.html" class="p-6 bg-zinc-950 border border-zinc-800 hover:border-zinc-500 transition-all group">
+                    <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-700 text-[10px] text-zinc-400 font-tech uppercase tracking-widest rounded-sm mb-4 inline-block">[TECNOLOGIA SOCIAL]</span>
+                    <h3 class="text-xl font-bold text-zinc-200 group-hover:text-white mb-2">Kezya</h3>
+                    <p class="text-zinc-500 text-sm">IA e protagonismo: ensinando a juventude a forjar a própria história.</p>
+                </a>
+
+                <a href="salomao/index.html" class="p-6 bg-zinc-950 border border-zinc-800 hover:border-zinc-500 transition-all group">
+                    <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-700 text-[10px] text-zinc-400 font-tech uppercase tracking-widest rounded-sm mb-4 inline-block">[TECNOLOGIA SOCIAL]</span>
+                    <h3 class="text-xl font-bold text-zinc-200 group-hover:text-white mb-2">Salomão</h3>
+                    <p class="text-zinc-500 text-sm">Registros visuais e narrativos no limite do asfalto.</p>
+                </a>
+
+                <a href="alesia/index.html" class="p-6 bg-zinc-950 border border-zinc-800 hover:border-zinc-500 transition-all group">
+                    <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-700 text-[10px] text-zinc-400 font-tech uppercase tracking-widest rounded-sm mb-4 inline-block">[MANIFESTO]</span>
+                    <h3 class="text-xl font-bold text-zinc-200 group-hover:text-white mb-2">Alésia</h3>
+                    <p class="text-zinc-500 text-sm">Por que movimentos sociais não podem ser como Alésia. A Universidade e o ponto de inflexão das IAs.</p>
+                </a>
+
+                <a href="eucaristia/index.html" class="p-6 bg-zinc-950 border border-zinc-800 hover:border-zinc-500 transition-all group">
+                    <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-700 text-[10px] text-zinc-400 font-tech uppercase tracking-widest rounded-sm mb-4 inline-block">[ENSAIO]</span>
+                    <h3 class="text-xl font-bold text-zinc-200 group-hover:text-white mb-2">A Eucaristia</h3>
+                    <p class="text-zinc-500 text-sm">O peso do pão, do sangue e da comunhão no chão de cimento.</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- CATEGORIA 03: DOCUMENTAÇÃO TÁTICA -->
+        <section class="mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="font-tech text-sm text-zinc-500 uppercase tracking-widest font-bold">
+                    // 03. Documentação Tática
+                </h2>
+                <div class="h-px bg-zinc-800 flex-grow"></div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-4">
+                <a href="o-bug-do-estado/index.html" class="p-6 bg-black border-l-4 border-zinc-600 hover:border-white transition-all group flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-700 text-[10px] text-zinc-400 font-tech uppercase tracking-widest rounded-sm mb-3 inline-block">[MANUAL DO SISTEMA]</span>
+                        <h3 class="text-xl font-bold text-zinc-200 group-hover:text-white mb-1">O Bug do Estado</h3>
+                        <p class="text-zinc-500 text-sm">Manuais, PDFs, esbulho possessório e material gráfico da resistência.</p>
+                    </div>
+                    <div class="font-tech text-xs text-zinc-600 uppercase">
+                        Acessar Diretório &rarr;
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full border-t border-zinc-800 py-8 px-4 text-center mt-auto">
+        <p class="font-tech text-xs text-zinc-600 uppercase tracking-widest">
+            A verdade não usa máscara. Sistema operando em modo raiz.
+        </p>
+    </footer>
+
+</body>
+</html>

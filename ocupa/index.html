@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<!-- Trava do Favicon -->
+    <link rel="icon" href="data:,">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L54EQJ2N41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L54EQJ2N41');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocupação Francisco Bernardo - O Castelo de Tocas</title>
+    <style>
+        :root {
+            --bg: #050505;
+            --text: #ffffff;
+            --accent-red: #e60000;
+            --accent-yellow: #ffea00;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* SEÇÃO 1: O LAMBE-LAMBE (HERO) */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            border-left: 12px solid var(--accent-red);
+            padding-left: 1.5rem;
+        }
+
+	.institucional {
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            font-weight: 800;
+            color: var(--accent-red);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.2rem;
+            display: block;
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 10vw, 7.5rem); /* Aumentei o limite máximo para explodir na tela */
+            font-weight: 900;
+            line-height: 0.9;
+            margin-bottom: 1rem;
+            letter-spacing: -0.04em;
+            color: var(--text);
+        }
+
+	h2 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--accent-yellow);
+            margin-bottom: 4rem;
+            letter-spacing: -0.01em;
+        }
+
+        .impact-phrase {
+            display: inline-block;
+            background-color: var(--accent-red);
+            color: var(--text);
+            font-size: clamp(2rem, 6vw, 4rem);
+            font-weight: 900;
+            padding: 0.5rem 1.5rem;
+            margin-bottom: 3rem;
+            letter-spacing: -0.02em;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(230, 0, 0, 0.7); }
+            50% { transform: scale(1.02); box-shadow: 0 0 25px 10px rgba(230, 0, 0, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(230, 0, 0, 0); }
+        }
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .contact-link, .btn-scroll {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text);
+            text-decoration: none;
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 800;
+            border: 4px solid var(--text);
+            padding: 1rem 1.5rem;
+            transition: all 0.2s ease;
+            background-color: transparent;
+            width: fit-content;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .contact-link:hover, .btn-scroll:hover {
+            background-color: var(--text);
+            color: var(--bg);
+            transform: translate(4px, -4px);
+            box-shadow: -4px 4px 0px var(--accent-red);
+        }
+
+        .btn-scroll {
+            border-color: var(--accent-yellow);
+            color: var(--accent-yellow);
+        }
+
+        .btn-scroll:hover {
+            background-color: var(--accent-yellow);
+            box-shadow: -4px 4px 0px var(--text);
+        }
+
+        /* SEÇÃO 2: O MANIFESTO / CONTEXTO */
+        .manifesto {
+            padding: 4rem 1.5rem;
+            background-color: #111;
+            border-top: 4px solid var(--accent-red);
+            flex-grow: 1;
+        }
+
+        .manifesto-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .manifesto h3 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            color: var(--accent-yellow);
+        }
+
+        .manifesto p {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            margin-bottom: 1.5rem;
+            color: #ddd;
+        }
+
+        .manifesto strong {
+            color: white;
+            background-color: rgba(230, 0, 0, 0.2);
+            padding: 0 0.2rem;
+        }
+
+        /* SEÇÃO 3: RODAPÉ DE AUTONOMIA */
+        .footer-autonomia {
+            background-color: #000;
+            border-top: 2px dashed #333;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #888;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-content strong {
+            color: #ccc;
+        }
+
+        .footer-link {
+            color: var(--accent-red);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        .footer-link:hover {
+            color: var(--accent-yellow);
+            text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+            .container { padding-left: 3rem; }
+            .contacts { flex-direction: row; flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+	    <div class="container">
+            <!-- A chancela política menor e em vermelho -->
+            <span class="institucional">Ocupação Francisco Bernardo</span>
+            <!-- A identidade gritando na tela -->
+            <h1>O Castelo de Tocas</h1>
+            <h2>Rua Dr. Faivre, 1212</h2>
+
+            <div class="impact-phrase">"Eu moro aqui."</div>
+            <div class="contacts">
+                <a href="https://wa.me/5541992313435" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    WhatsApp: (41) 99231-3435
+                </a>
+                <a href="mailto:jamur@ufpr.br" class="contact-link">
+                    E-mail: jamur@ufpr.br
+                </a>
+                <a href="https://maps.app.goo.gl/KSwbj2QSGb9bWbq36" target="_blank" rel="noopener noreferrer" class="contact-link" style="border-color: var(--accent-yellow); color: var(--accent-yellow);">
+                    📍 Abrir no Mapa
+                </a>
+            </div>
+
+            <a href="#nossa-luta" class="btn-scroll">
+                ↓ ENTENDA A NOSSA LUTA
+            </a>
+        </div>
+    </section>
+
+    <section id="nossa-luta" class="manifesto">
+        <div class="manifesto-content">
+            <h3>Por que ocupamos?</h3>
+            <p>O Castelo de Tocas não é apenas um prédio, é uma resposta direta à negligência do Estado. <strong>Este imóvel pertence à União e apodrecia vazio há 12 anos.</strong> São mais de uma década de abandono de um patrimônio público, enquanto a especulação imobiliária expulsa o trabalhador do centro e famílias inteiras dormem nas calçadas.</p>
+            
+            <p>Nós não invadimos, nós retomamos. Decidimos que a função social da propriedade não é uma sugestão teórica, é uma lei. E nós estamos aplicando essa lei com os nossos próprios corpos, transformando o abandono federal em moradia popular.</p>
+            
+            <h3 style="margin-top: 4rem; font-size: 2rem; color: var(--accent-yellow);">Mais que teto: Um Centro de Convivência</h3>
+            <p>A verdadeira ocupação acontece por dentro. Na prática, <strong>nós prestamos o serviço público que nos foi negado</strong>. O Castelo de Tocas funciona como um espaço de saúde mental, convivência e infraestrutura humana.</p>
+
+            <p>Enquanto o sistema isola, nós integramos. Aqui, o ato de cozinhar junto cria laços. Nossas crianças encontram segurança, brincam e aprendem em oficinas de massinha, sessões de cinema e em um ambiente onde adultos atuam como referências de cuidado coletivo. Nós não construímos apenas quartos, construímos uma comunidade onde ninguém fica para trás.</p>
+
+            <h3 style="margin-top: 4rem; font-size: 2rem;">Como Ajudar e Integrar:</h3>
+            <ul style="font-size: 1.2rem; margin-left: 1.5rem; color: #ddd; margin-bottom: 2rem;">
+                <li style="margin-bottom: 0.5rem;">Doação de alimentos não perecíveis para a cozinha comunitária;</li>
+                <li style="margin-bottom: 0.5rem;">Materiais lúdicos, brinquedos e livros para as oficinas infantis;</li>
+                <li style="margin-bottom: 0.5rem;">Materiais de limpeza, higiene e suporte logístico;</li>
+                <li style="margin-bottom: 0.5rem;">Presença: venha somar corpo e conhecimento nas nossas atividades.</li>
+            </ul>
+            
+            <a href="https://wa.me/5541992313435" target="_blank" rel="noopener noreferrer" class="contact-link" style="font-size: 1.2rem;">
+                Fale com um morador para apoiar →
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer-autonomia">
+        <div class="footer-content">
+            <p><strong>Nota de Autonomia:</strong> Esta página é uma iniciativa independente criada por mim, <strong>Rafael Jamur</strong>, como morador. Assumo integralmente a autoria e a responsabilidade por este conteúdo.</p>
+            <p style="margin-top: 0.5rem;">Para resguardar a organização coletiva, esclareço que este site não é um canal oficial de comunicação da Assembleia da Ocupação.</p>
+            <p style="margin-top: 1.5rem;">
+                Desenvolvido por <a href="https://rafajamur.com.br" target="_blank" rel="noopener noreferrer" class="footer-link">rafajamur.com.br</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

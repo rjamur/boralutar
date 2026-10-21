@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivo de Histórias | Bora Lutar</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tipografia Brutalista -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* Variáveis e setup minimalista */
+        :root {
+            --font-ui: 'Inter', sans-serif;
+            --font-tech: 'Space Mono', monospace;
+        }
+        
+        body {
+            font-family: var(--font-ui);
+            background-color: #09090b; /* zinc-950 */
+            color: #e4e4e7; /* zinc-200 */
+        }
+
+        .font-tech { font-family: var(--font-tech); }
+
+        /* Estilo de seleção de texto afiado */
+        ::selection {
+            background-color: #dc2626; /* red-600 */
+            color: #ffffff;
+        }
+
+        /* Efeito de hover no estilo terminal/dossiê */
+        .dossier-row {
+            transition: all 0.2s ease-in-out;
+            border-left: 4px solid transparent;
+        }
+        .dossier-row:hover {
+            background-color: #18181b; /* zinc-900 */
+            border-left: 4px solid #dc2626; /* red-600 */
+            padding-left: 1rem;
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L54EQJ2N41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-L54EQJ2N41");
+    </script>
+</head>
+<body class="flex flex-col min-h-screen selection:bg-red-600 selection:text-white">
+
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header class="w-full border-b border-zinc-800 px-4 md:px-8 py-6 flex justify-between items-center">
+        <a href="/" class="font-tech font-bold text-xl tracking-tighter uppercase text-zinc-500 hover:text-white transition-colors">
+            [Voltar_ao_Inicio]
+        </a>
+        <nav class="font-tech text-xs tracking-widest uppercase text-red-500 flex items-center gap-2">
+            <span class="w-2 h-2 bg-red-500 animate-pulse"></span>
+            <span>Diretório_Acessado</span>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="flex-grow px-4 md:px-8 py-12 md:py-20">
+        
+        <div class="max-w-4xl mx-auto">
+            
+            <header class="mb-16 border-b border-zinc-800 pb-10">
+                <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tighter text-white mb-4">
+                    Arquivo Geral
+                </h1>
+                <p class="font-tech text-zinc-400 text-sm md:text-base max-w-2xl leading-relaxed">
+                    Diretório indexado de relatos. No momento, apenas uma história está disponível publicamente.
+                </p>
+            </header>
+
+<!-- HISTÓRIAS DISPONÍVEIS -->
+<section class="mb-20">
+    <div class="flex items-center gap-4 mb-8">
+        <h2 class="font-tech text-sm text-red-500/70 uppercase tracking-widest">
+            // Histórias
+        </h2>
+        <div class="h-px bg-zinc-800 flex-grow"></div>
+    </div>
+
+    <!-- CONTAINER DOS ITENS (Mantém as divisões e alinhamentos) -->
+    <div class="flex flex-col border-y border-zinc-800 divide-y divide-zinc-800">
+        
+        <!-- HISTÓRIA 1 (A Mais Antiga) -->
+        <a href="eucaristia/index.html" class="dossier-row py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-zinc-900/40 transition-colors px-2 md:px-4 -mx-2 md:-mx-4 rounded">
+            <div class="flex flex-col">
+                <!-- Tag de Acesso Brutalista -->
+                <div class="font-tech text-[10px] md:text-xs text-zinc-500 mb-3 flex items-center gap-2 uppercase tracking-widest">
+                    <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_5px_#10b981]"></span>
+                    Acesso: Público
+                </div>
+                <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">
+                    A Eucaristia
+                </h3>
+                <p class="text-zinc-500 mt-2 max-w-2xl text-sm md:text-base">
+                    Disponível na pasta eucaristia.
+                </p>
+            </div>
+            <div class="font-tech text-xs text-zinc-600 hidden md:block uppercase text-right group-hover:text-red-500 transition-colors">
+                Abrir_Arquivo <br> ->
+            </div>
+        </a>
+
+        <!-- HISTÓRIA 2 -->
+        <a href="o-bug-do-estado/index.html" class="dossier-row py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-zinc-900/40 transition-colors px-2 md:px-4 -mx-2 md:-mx-4 rounded">
+            <div class="flex flex-col">
+                <!-- Tag de Acesso Brutalista -->
+                <div class="font-tech text-[10px] md:text-xs text-zinc-500 mb-3 flex items-center gap-2 uppercase tracking-widest">
+                    <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_5px_#10b981]"></span>
+                    Acesso: Público
+                </div>
+                <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">
+                    O Bug do Estado
+                </h3>
+            </div>
+            <div class="font-tech text-xs text-zinc-600 hidden md:block uppercase text-right group-hover:text-red-500 transition-colors">
+                Abrir_Arquivo <br> ->
+            </div>
+        </a>
+
+        <!-- HISTÓRIA 3 (A Mais Recente, fica no final da descida) -->
+        <a href="a-maquina-de-moleculas/index.html" class="dossier-row py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-zinc-900/40 transition-colors px-2 md:px-4 -mx-2 md:-mx-4 rounded">
+            <div class="flex flex-col">
+                <!-- Tag de Acesso Brutalista com Destaque -->
+                <div class="font-tech text-[10px] md:text-xs text-zinc-500 mb-3 flex items-center gap-2 uppercase tracking-widest">
+                    <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_5px_#10b981]"></span>
+                    Acesso: Público <span class="text-zinc-700 mx-1">|</span> <span class="text-red-500 font-bold">NOVO_REGISTRO</span>
+                </div>
+                <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">
+                    A Máquina de Moléculas e a Anatomia da Graça
+                </h3>
+                <p class="font-ui text-zinc-400 mt-2 text-sm md:text-base max-w-2xl">
+                    A história de um intelectual desmontado, uma enfermeira de trincheira e o escândalo do amor imerecido. O Coelho encontra o Carpinteiro.
+                </p>
+            </div>
+            <div class="font-tech text-xs text-zinc-600 hidden md:block uppercase text-right group-hover:text-red-500 transition-colors">
+                Abrir_Arquivo <br> ->
+            </div>
+        </a>
+
+    </div>
+</section>
+
+
+	    <section class="mb-20">
+                <div class="flex items-center gap-4 mb-8">
+                    <h2 class="font-tech text-sm text-red-500/70 uppercase tracking-widest">
+                        // Manifestos
+                    </h2>
+                    <div class="h-px bg-zinc-800 flex-grow"></div>
+                </div>
+
+                <div class="flex flex-col border-y border-zinc-800 divide-y divide-zinc-800">
+                    <a href="alesia/" class="dossier-row py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group">
+                        <div class="flex flex-col">
+                            <span class="font-tech text-xs text-red-500 mb-2 font-bold">[PÚBLICO]</span>
+                            <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">
+                                Alesia
+                            </h3>
+                        </div>
+                        <div class="font-tech text-xs text-zinc-600 hidden md:block uppercase text-right">
+                            Abrir_Arquivo <br> ->
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="mb-20">
+                <div class="flex items-center gap-4 mb-8">
+                    <h2 class="font-tech text-sm text-red-500/70 uppercase tracking-widest">
+                        // Formação com Outre
+                    </h2>
+                    <div class="h-px bg-zinc-800 flex-grow"></div>
+                </div>
+
+                <div class="flex flex-col border-y border-zinc-800 divide-y divide-zinc-800">
+                    <a href="kezya/" class="dossier-row py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group">
+                        <div class="flex flex-col">
+                            <span class="font-tech text-xs text-red-500 mb-2 font-bold">[PÚBLICO]</span>
+                            <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">
+                                Kezya
+                            </h3>
+                        </div>
+                        <div class="font-tech text-xs text-zinc-600 hidden md:block uppercase text-right">
+                            Abrir_Arquivo <br> ->
+                        </div>
+                    </a>
+                    <a href="salomao/" class="dossier-row py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group">
+                        <div class="flex flex-col">
+                            <span class="font-tech text-xs text-red-500 mb-2 font-bold">[PÚBLICO]</span>
+                            <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">
+                                Salomão
+                            </h3>
+                        </div>
+                        <div class="font-tech text-xs text-zinc-600 hidden md:block uppercase text-right">
+                            Abrir_Arquivo <br> ->
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="mb-20">
+                <div class="flex items-center gap-4 mb-8">
+                    <h2 class="font-tech text-sm text-red-500/70 uppercase tracking-widest">
+                        // Fábulas
+                    </h2>
+                    <div class="h-px bg-zinc-800 flex-grow"></div>
+                </div>
+
+                <div class="flex flex-col border-y border-zinc-800 divide-y divide-zinc-800">
+                    <a href="a-anatomia-do-cativeiro/" class="dossier-row py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group">
+                        <div class="flex flex-col">
+                            <span class="font-tech text-xs text-red-500 mb-2 font-bold">[PÚBLICO]</span>
+                            <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">
+                                A Anatomia do Cativeiro
+                            </h3>
+                        </div>
+                        <div class="font-tech text-xs text-zinc-600 hidden md:block uppercase text-right">
+                            Abrir_Arquivo <br> ->
+                        </div>
+                    </a>
+                    <a href="o-nome-do-monstro-gaslighting/" class="dossier-row py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group">
+                        <div class="flex flex-col">
+                            <span class="font-tech text-xs text-red-500 mb-2 font-bold">[PÚBLICO]</span>
+                            <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">
+                                O Nome do Monstro (Gaslighting)
+                            </h3>
+                        </div>
+                        <div class="font-tech text-xs text-zinc-600 hidden md:block uppercase text-right">
+                            Abrir_Arquivo <br> ->
+                        </div>
+                    </a>
+                    <a href="o-ponto-de-virada/" class="dossier-row py-6 md:py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group">
+                        <div class="flex flex-col">
+                            <span class="font-tech text-xs text-red-500 mb-2 font-bold">[PÚBLICO]</span>
+                            <h3 class="text-2xl md:text-3xl font-bold text-zinc-200 group-hover:text-white transition-colors tracking-tight">
+                                O Ponto de Virada
+                            </h3>
+                        </div>
+                        <div class="font-tech text-xs text-zinc-600 hidden md:block uppercase text-right">
+                            Abrir_Arquivo <br> ->
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="w-full border-t border-zinc-800 px-4 md:px-8 py-10 mt-auto">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <p class="font-tech text-xs text-zinc-600 uppercase tracking-wider">
+                Sistema Operacional <span class="text-zinc-400">BoraLutar</span>
+            </p>
+            <p class="font-tech text-xs text-zinc-600 uppercase tracking-wider">
+                Index_Atualizado
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

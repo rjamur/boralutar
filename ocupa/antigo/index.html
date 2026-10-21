@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L54EQJ2N41"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L54EQJ2N41');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoio à Ocupação Francisco Bernardo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+
+        .btn-red {
+            background-color: #d90429;
+            transition: all 0.3s ease;
+        }
+
+        .btn-red:hover {
+            background-color: #ef233c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(217, 4, 41, 0.4);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-6 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-zinc-900 via-black to-black">
+
+    <div class="max-w-md w-full text-center">
+        <!-- Cabeçalho Ético -->
+        <div class="mb-8 fade-in">
+            <p class="text-red-600 font-bold uppercase tracking-widest text-sm mb-1">Mídia Independente & Apoio</p>
+            <h1 class="text-xl font-medium text-zinc-300">Em apoio à</h1>
+            <h2 class="text-3xl font-black uppercase tracking-tighter mb-2 leading-none">
+                Ocupação <br><span class="text-red-600">Francisco Bernardo</span>
+            </h2>
+            <div class="w-12 h-1 bg-red-600 mx-auto my-4"></div>
+            <p class="text-zinc-400 text-sm italic">"Cobertura por morador e apoiador da luta por dignidade em Curitiba"</p>
+        </div>
+
+        <!-- Links Principais -->
+        <div class="space-y-4">
+            
+            <!-- Botão Live -->
+            <a href="https://youtube.com/@seucanal" target="_blank" class="block w-full p-4 rounded-xl btn-red font-bold flex items-center justify-between group fade-in delay-1 relative overflow-hidden">
+                <span class="flex items-center">
+                    <span class="relative flex h-3 w-3 mr-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                    </span>
+                    Assista a Live do Ato
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
+            </a>
+
+            <!-- Manifesto Oficial -->
+            <a href="#" class="block w-full p-4 rounded-xl bg-zinc-800 border border-zinc-700 hover:border-red-600 font-bold flex items-center justify-between transition-all fade-in delay-2">
+                <span class="text-sm">Manifesto do Movimento (Oficial)</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
+            </a>
+
+            <!-- Redes do Coletivo -->
+            <a href="https://www.instagram.com/ocupacaofranciscobernardo.mlb/" class="block w-full p-4 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-500 text-zinc-400 font-bold flex items-center justify-between transition-all fade-in delay-3">
+                <span class="text-xs uppercase tracking-widest">Siga as redes oficiais do movimento</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+
+        </div>
+
+        <!-- Footer Discreto -->
+        <div class="mt-12 text-zinc-600 text-[10px] uppercase tracking-[0.2em] fade-in delay-3">
+            Espaço de Solidariedade e Comunicação Popular
+        </div>
+    </div>
+
+</body>
+</html>
