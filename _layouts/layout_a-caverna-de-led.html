@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Caverna de LED e a Graça no Asfalto | Boralutar</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Lora:ital,wght@0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --font-story: 'Lora', serif;
+            --font-ui: 'Inter', sans-serif;
+            --font-tech: 'Space Mono', monospace;
+        }
+        
+        body {
+            font-family: var(--font-story);
+            background-color: #09090b; /* zinc-950 */
+            color: #d4d4d8; /* zinc-300 */
+        }
+
+        .font-ui { font-family: var(--font-ui); }
+        .font-tech { font-family: var(--font-tech); }
+
+        ::selection {
+            background-color: #0ea5e9; /* sky-500 */
+            color: #ffffff;
+        }
+        
+        /* Terminal Glows */
+        .glow-sky { box-shadow: 0 0 25px rgba(14, 165, 233, 0.15); }
+        .glow-slate { box-shadow: 0 0 25px rgba(100, 116, 139, 0.2); }
+        .glow-gold { box-shadow: 0 0 30px rgba(234, 179, 8, 0.2); }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L54EQJ2N41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-L54EQJ2N41");
+    </script>
+
+
+
+</head>
+<body class="relative min-h-screen pb-24 selection:bg-sky-500 selection:text-white">
+    {{ content }}
+    </body>
+</html>
+

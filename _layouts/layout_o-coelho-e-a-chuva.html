@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Coelho, a Chuva e o Peso do Castelo | Boralutar</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fontes do Google: Brutalismo (Inter + Space Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --font-ui: 'Inter', sans-serif;
+            --font-tech: 'Space Mono', monospace;
+        }
+        
+        body {
+            font-family: var(--font-ui);
+            background-color: #09090b; /* zinc-950 */
+            color: #d4d4d8; /* zinc-300 */
+        }
+
+        .font-tech { font-family: var(--font-tech); }
+
+        /* Seleção de texto */
+        ::selection {
+            background-color: #3b82f6; /* blue-500 */
+            color: #ffffff;
+        }
+        
+        /* Efeito Terminal Glow */
+        .terminal-glow-blue { text-shadow: 0 0 10px rgba(59, 130, 246, 0.4); }
+        .terminal-glow-red { text-shadow: 0 0 10px rgba(239, 68, 68, 0.4); }
+        .terminal-glow-purple { text-shadow: 0 0 10px rgba(168, 85, 247, 0.4); }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L54EQJ2N41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-L54EQJ2N41");
+    </script>
+
+</head>
+<body class="relative min-h-screen pb-24 selection:bg-blue-500 selection:text-white">
+    {{ content }}
+    </body>
+</html>

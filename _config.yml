@@ -8,3 +8,15 @@ lang: pt-BR
 markdown: kramdown
 theme: minima
 plugins: []
+
+collections:
+  historias:
+    output: true
+    permalink: /historias/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "historias"
+    values:
+      layout: "dossie"

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Fim - A Saga de Félix</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #d4d4d4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 650px;
+            background-color: #1a1a1a;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+            border-top: 5px solid #8b0000;
+        }
+        h1 {
+            color: #ff3333;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .image-wrapper {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .image-wrapper img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #333;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+        }
+        p {
+            line-height: 1.7;
+            font-size: 1.1em;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L54EQJ2N41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-L54EQJ2N41");
+    </script>
+</head>
+<body>
+    {{ content }}
+    </body>
+</html>

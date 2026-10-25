@@ -1,0 +1,240 @@
+---
+layout: layout_alesia
+title: "Alesia"
+category: historia
+ordem: 999
+date: 2026-06-30 02:33:48 -0300
+---
+
+<!-- HEADER -->
+    <header class="border-b border-neutral-800 p-4 md:p-6 bg-black sticky top-0 z-50 flex justify-between items-center shadow-lg">
+        <a href="/" class="flex items-center gap-3 font-black text-xl tracking-tighter uppercase text-white hover:text-red-400 transition-colors">
+            <i data-lucide="anchor" class="w-6 h-6 text-red-600"></i>
+            <span>BoraLutar</span>
+        </a>
+        <div class="flex items-center gap-4">
+            <a href="/oficina" class="hidden md:flex items-center gap-2 text-xs font-mono text-neutral-400 hover:text-white transition-colors uppercase border border-neutral-800 px-3 py-1.5 rounded-sm bg-neutral-900">
+                <i data-lucide="wrench" class="w-3 h-3"></i>
+                Ir para a Oficina
+            </a>
+            <div class="text-xs font-mono text-red-500 uppercase flex items-center gap-2">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                </span>
+                Urgência Nível 1
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 md:px-8 mt-12 md:mt-20">
+        
+        <!-- HERO SECTION -->
+        <section class="mb-16 md:mb-24">
+            <div class="inline-block bg-red-600 text-white font-bold px-3 py-1 text-sm uppercase tracking-widest mb-6 rounded-sm shadow-[0_0_15px_rgba(220,38,38,0.5)]">
+                O Ponto de Inflexão
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black uppercase leading-[0.9] tracking-tighter mb-6">
+                Do alto do mastro, <br class="hidden md:block"/>
+                <span class="text-neutral-500">a gente grita:</span><br/>
+                <span class="text-white">O furacão já tocou a costa.</span>
+            </h1>
+            <p class="text-lg md:text-2xl font-light text-neutral-400 max-w-3xl leading-relaxed">
+                Pensávamos que a tragédia seria no futuro. A física do desastre acelerou. O tempo encurtou. Se a sua organização ainda está discutindo pureza ideológica em salas fechadas, vocês já estão obsoletos.
+            </p>
+        </section>
+
+        <!-- METÁFORA -->
+        <section class="mb-16 md:mb-24 p-6 md:p-10 bg-neutral-900 border-l-4 border-red-600 rounded-r-md shadow-2xl">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 uppercase flex items-center gap-3">
+                <i data-lucide="alert-triangle" class="text-red-500 shrink-0"></i>
+                Não seremos Alésia.
+            </h2>
+            <p class="text-base md:text-xl text-neutral-300 leading-relaxed mb-4">
+                Em 70 d.C., as facções se trucidavam dentro de Jerusalém enquanto os romanos construíam o cerco do lado de fora. Em Alésia, a vaidade dos clãs gauleses esperava um milagre que nunca chegou.
+            </p>
+            <p class="text-lg md:text-xl font-bold text-white bg-black/50 p-4 rounded-sm border border-neutral-800">
+                Hoje, as lideranças brigam pela cor do sofá no bunker, enquanto a SPU, o clima extremo e a plataformização moem nossos ossos.
+            </p>
+        </section>
+
+        <!-- DADOS -->
+        <section class="mb-24">
+            <h2 class="text-2xl md:text-3xl font-black uppercase mb-8 border-b border-neutral-800 pb-4">
+                A Aceleração do Colapso
+            </h2>
+            
+            <div class="space-y-4">
+                
+                <!-- Clima Card -->
+                <div class="accordion-item border border-neutral-800 rounded-sm overflow-hidden transition-all duration-300 bg-black hover:bg-neutral-900" id="card-clima">
+                    <button onclick="toggleAccordion('clima')" class="w-full text-left p-6 flex items-start md:items-center justify-between gap-4 focus:outline-none">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-orange-500/10 p-3 rounded-full shrink-0">
+                                <i data-lucide="flame" class="text-orange-500 w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold uppercase mb-1">O Relógio Quebrou</h3>
+                                <p class="text-neutral-400 text-sm md:text-base pr-4">O limite climático foi engolido. O foco não é mitigar, é sobreviver.</p>
+                            </div>
+                        </div>
+                        <i data-lucide="chevron-down" id="icon-clima" class="text-red-500 shrink-0 transition-transform"></i>
+                    </button>
+                    <div id="content-clima" class="accordion-content p-6 pt-0 border-t border-neutral-800 bg-neutral-900/50 mt-2">
+                        <p class="text-neutral-300 mb-6 leading-relaxed">O modelo de 1.5°C falhou. A tragédia no Rio Grande do Sul e o caos climático no Sul e Sudeste não são anomalias, são o novo padrão estrutural do país. A OIM (ONU) em conjunto com o Governo Brasileiro recém-lançou (Maio/2026) um estudo alarmante sobre 'Migração e Deslocamento' forçados por catástrofes climáticas. Não é mais sobre 'salvar o planeta', é sobre sobrevivência em áreas de risco e adaptação violenta da infraestrutura urbana.</p>
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-neutral-500 mb-3">Estudos, Dados Oficiais & Contexto:</h4>
+                        <ul class="space-y-3">
+                            <li><a href="https://publications.iom.int/system/files/pdf/pub2026-006-r-oim_redeclima_pt.pdf" target="_blank" class="text-orange-400 hover:text-orange-300 text-sm flex items-start md:items-center gap-2 group p-2 rounded hover:bg-neutral-800/50 transition-colors"><i data-lucide="external-link" class="w-4 h-4 mt-0.5 md:mt-0 shrink-0"></i><span class="leading-tight">OIM/Gov. Federal (2026): Migração e Deslocamento Climático no Brasil</span></a></li>
+                            <li><a href="https://www.ipcc.ch/report/ar6/wg2/" target="_blank" class="text-orange-400 hover:text-orange-300 text-sm flex items-start md:items-center gap-2 group p-2 rounded hover:bg-neutral-800/50 transition-colors"><i data-lucide="external-link" class="w-4 h-4 mt-0.5 md:mt-0 shrink-0"></i><span class="leading-tight">IPCC: 6º Relatório de Avaliação - Impactos e Vulnerabilidade</span></a></li>
+                            <li><a href="https://mapbiomas.org/agua" target="_blank" class="text-orange-400 hover:text-orange-300 text-sm flex items-start md:items-center gap-2 group p-2 rounded hover:bg-neutral-800/50 transition-colors"><i data-lucide="external-link" class="w-4 h-4 mt-0.5 md:mt-0 shrink-0"></i><span class="leading-tight">MapBiomas: A perda da superfície de água no Brasil</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IA Card -->
+                <div class="accordion-item border border-neutral-800 rounded-sm overflow-hidden transition-all duration-300 bg-black hover:bg-neutral-900" id="card-ia">
+                    <button onclick="toggleAccordion('ia')" class="w-full text-left p-6 flex items-start md:items-center justify-between gap-4 focus:outline-none">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-blue-500/10 p-3 rounded-full shrink-0">
+                                <i data-lucide="cpu" class="text-blue-500 w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold uppercase mb-1">O Xeque-Mate da IA</h3>
+                                <p class="text-neutral-400 text-sm md:text-base pr-4">A automação desestrutura a administração e proletariza o conhecimento.</p>
+                            </div>
+                        </div>
+                        <i data-lucide="chevron-down" id="icon-ia" class="text-red-500 shrink-0 transition-transform"></i>
+                    </button>
+                    <div id="content-ia" class="accordion-content p-6 pt-0 border-t border-neutral-800 bg-neutral-900/50 mt-2">
+                        <p class="text-neutral-300 mb-6 leading-relaxed">A automação não é o futuro, é a lâmina cortando a carne agora. A plataformização já havia engolido a logística de rua, agora a Inteligência Artificial entra nos escritórios, desestruturando o setor de serviços e proletarizando o trabalhador cognitivo. O Fórum Econômico Mundial e a OIT mostram que não há transição justa sem organização imediata.</p>
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-neutral-500 mb-3">Estudos, Dados Oficiais & Contexto:</h4>
+                        <ul class="space-y-3">
+                            <li><a href="https://www.ilo.org/global/research/global-reports/weso/2024/WCMS_908142/lang--en/index.htm" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm flex items-start md:items-center gap-2 group p-2 rounded hover:bg-neutral-800/50 transition-colors"><i data-lucide="external-link" class="w-4 h-4 mt-0.5 md:mt-0 shrink-0"></i><span class="leading-tight">OIT (ILO): Impactos globais da IA no setor de serviços e emprego</span></a></li>
+                            <li><a href="https://sloanreview.mit.edu/article/how-generative-ai-will-reshape-the-workplace/" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm flex items-start md:items-center gap-2 group p-2 rounded hover:bg-neutral-800/50 transition-colors"><i data-lucide="external-link" class="w-4 h-4 mt-0.5 md:mt-0 shrink-0"></i><span class="leading-tight">MIT Sloan: Como a IA está reescrevendo o trabalho de colarinho branco</span></a></li>
+                            <li><a href="https://www.weforum.org/reports/the-future-of-jobs-report-2023" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm flex items-start md:items-center gap-2 group p-2 rounded hover:bg-neutral-800/50 transition-colors"><i data-lucide="external-link" class="w-4 h-4 mt-0.5 md:mt-0 shrink-0"></i><span class="leading-tight">Fórum Econômico Mundial: O Futuro do Trabalho (Relatório)</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fome Card -->
+                <div class="accordion-item border border-neutral-800 rounded-sm overflow-hidden transition-all duration-300 bg-black hover:bg-neutral-900" id="card-fome">
+                    <button onclick="toggleAccordion('fome')" class="w-full text-left p-6 flex items-start md:items-center justify-between gap-4 focus:outline-none">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-yellow-500/10 p-3 rounded-full shrink-0">
+                                <i data-lucide="wheat" class="text-yellow-500 w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold uppercase mb-1">A Fome Exponencial</h3>
+                                <p class="text-neutral-400 text-sm md:text-base pr-4">Celeiros cheios, distribuição psicopata. A matemática do sistema faliu.</p>
+                            </div>
+                        </div>
+                        <i data-lucide="chevron-down" id="icon-fome" class="text-red-500 shrink-0 transition-transform"></i>
+                    </button>
+                    <div id="content-fome" class="accordion-content p-6 pt-0 border-t border-neutral-800 bg-neutral-900/50 mt-2">
+                        <p class="text-neutral-300 mb-6 leading-relaxed">Nós moramos em um país que bate recorde na safra de grãos e, paradoxalmente, convive com a subnutrição e insegurança alimentar severa nas periferias e ocupações. A irracionalidade do capital (como exposta pela sociologia crítica e dados da FAO) faz com que produzamos alimento suficiente para todos, mas distribuamos baseados na lógica do lucro. É o manicômio da abundância excludente.</p>
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-neutral-500 mb-3">Estudos, Dados Oficiais & Contexto:</h4>
+                        <ul class="space-y-3">
+                            <li><a href="https://www.fao.org/publications/sofi/en/" target="_blank" class="text-yellow-400 hover:text-yellow-300 text-sm flex items-start md:items-center gap-2 group p-2 rounded hover:bg-neutral-800/50 transition-colors"><i data-lucide="external-link" class="w-4 h-4 mt-0.5 md:mt-0 shrink-0"></i><span class="leading-tight">FAO/ONU: O Estado da Segurança Alimentar (SOFI)</span></a></li>
+                            <li><a href="https://pesquisassan.net.br/2-inquerito-nacional-sobre-inseguranca-alimentar-no-contexto-da-pandemia-da-covid-19-no-brasil/" target="_blank" class="text-yellow-400 hover:text-yellow-300 text-sm flex items-start md:items-center gap-2 group p-2 rounded hover:bg-neutral-800/50 transition-colors"><i data-lucide="external-link" class="w-4 h-4 mt-0.5 md:mt-0 shrink-0"></i><span class="leading-tight">Rede PENSSAN: Inquérito sobre Insegurança Alimentar no Brasil</span></a></li>
+                            <li><a href="https://www.oxfam.org.br/forum-economico-de-davos/desigualdade-sa-como-o-poder-corporativo-divide-o-nosso-mundo/" target="_blank" class="text-yellow-400 hover:text-yellow-300 text-sm flex items-start md:items-center gap-2 group p-2 rounded hover:bg-neutral-800/50 transition-colors"><i data-lucide="external-link" class="w-4 h-4 mt-0.5 md:mt-0 shrink-0"></i><span class="leading-tight">Oxfam: Relatório 'A Riqueza que Exclui' e Desigualdade</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- UNIVERSIDADE PIVOT -->
+        <section class="mb-20 bg-red-600 text-black p-6 md:p-12 rounded-sm transform md:-rotate-1 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-20 pointer-events-none">
+                <i data-lucide="alert-triangle" class="w-32 h-32"></i>
+            </div>
+            <div class="transform md:rotate-1 relative z-10">
+                <h2 class="text-3xl md:text-5xl font-black uppercase mb-6 leading-none">
+                    A Torre de Marfim tem que descer pro asfalto.
+                </h2>
+                <p class="text-xl md:text-2xl font-bold mb-6">
+                    O modelo University First falhou. 
+                    A prioridade agora é uma só: <span class="bg-black text-white px-3 py-1 uppercase tracking-widest inline-block mt-2 md:mt-0">Extensão</span>.
+                </p>
+                <p class="text-base md:text-lg font-medium mb-8 max-w-3xl">
+                    Toda pesquisa e edital precisa estar nas ocupações e ruas resolvendo problemas reais de sobrevivência. Se a universidade não girar o leme e cortar a "pesquisa pela pesquisa" agora, ela é cúmplice da Rainha de Copas.
+                </p>
+                <div class="text-sm font-bold uppercase tracking-widest border-t border-black/30 pt-4 flex flex-wrap gap-4">
+                    <span>#ExtensãoOuMorte</span>
+                    <span>#PedagogiaDaAutonomia</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="text-center bg-neutral-900 border border-neutral-800 p-8 md:p-12 rounded-sm shadow-2xl">
+            <h2 class="text-2xl md:text-4xl font-bold uppercase mb-4">
+                O tempo acabou.
+            </h2>
+            <p class="text-neutral-400 text-base md:text-lg mb-8 max-w-2xl mx-auto">
+                Se você enxerga a miopia do sistema, não perca mais tempo. A assembleia tá rolando. O barco tá virando. Entra na roda para construirmos a rede de resistência.
+            </p>
+            <!-- COLOCA TEU LINK DO WHATSAPP OU N8N AQUI EMBAIXO NO href -->
+            <a href="https://wa.me/5541992313435" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-500 text-white font-black text-lg md:text-xl uppercase px-8 py-5 rounded-sm transition-transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(22,163,74,0.3)]">
+                <i data-lucide="message-circle" class="w-6 h-6"></i>
+                Vem conversar (WhatsApp)
+            </a>
+            <p class="mt-6 text-xs text-neutral-600 font-mono uppercase tracking-widest">
+                Conexão Direta / Protocolo Emergencial Ativado
+            </p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-neutral-900 bg-black p-6 flex flex-col md:flex-row items-center justify-between gap-4 text-neutral-600 text-sm font-mono mt-20">
+        <div>
+            &copy; 2026 - Ocupação / Software Livre / Trabalho de Base.
+        </div>
+        <a href="/oficina" class="flex items-center gap-2 hover:text-white transition-colors">
+            <i data-lucide="wrench" class="w-4 h-4"></i>
+            Acessar a Oficina
+        </a>
+    </footer>
+
+    <!-- Lógica do Acordeão e Inicialização dos Ícones -->
+    <script>
+        // Inicializa os ícones do Lucide
+        lucide.createIcons();
+
+        // Função do Acordeão
+        function toggleAccordion(id) {
+            // Pega os elementos da seção clicada
+            const content = document.getElementById('content-' + id);
+            const icon = document.getElementById('icon-' + id);
+            const card = document.getElementById('card-' + id);
+            
+            // Verifica se já está aberto
+            const isActive = content.classList.contains('active');
+
+            // Fecha todos primeiro
+            document.querySelectorAll('.accordion-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('[id^="icon-"]').forEach(el => {
+                el.setAttribute('data-lucide', 'chevron-down');
+                el.classList.add('text-red-500');
+                el.classList.remove('text-neutral-500');
+            });
+            document.querySelectorAll('.accordion-item').forEach(el => {
+                el.classList.remove('bg-neutral-900');
+                el.classList.add('bg-black');
+            });
+
+            // Se não estava aberto, abre o atual
+            if (!isActive) {
+                content.classList.add('active');
+                icon.setAttribute('data-lucide', 'x');
+                icon.classList.remove('text-red-500');
+                icon.classList.add('text-neutral-500');
+                card.classList.remove('bg-black');
+                card.classList.add('bg-neutral-900');
+            }
+            
+            // Re-renderiza os ícones que foram trocados (chevron para X ou X para chevron)
+            lucide.createIcons();
+        }
+    </script>

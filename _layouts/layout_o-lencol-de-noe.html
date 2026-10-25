@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Fábula da Toca e o Lençol de Noé | Boralutar</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --font-ui: 'Inter', sans-serif;
+            --font-tech: 'Space Mono', monospace;
+        }
+        
+        body {
+            font-family: var(--font-ui);
+            background-color: #09090b; /* zinc-950 */
+            color: #d4d4d8; /* zinc-300 */
+        }
+
+        .font-tech { font-family: var(--font-tech); }
+
+        /* Seleção de texto */
+        ::selection {
+            background-color: #10b981; /* emerald-500 */
+            color: #000000;
+        }
+        
+        /* Efeito Terminal Glow */
+        .terminal-glow {
+            text-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+        }
+    </style>
+</head>
+<body class="relative min-h-screen pb-24 selection:bg-emerald-500 selection:text-black">
+    {{ content }}
+    </body>
+</html>

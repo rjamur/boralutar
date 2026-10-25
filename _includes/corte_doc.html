@@ -1,0 +1,26 @@
+{% comment %} 
+A máquina olha primeiro se você forçou um tema no include. 
+Se não forçou, ela lê automaticamente o layout do arquivo da história.
+{% endcomment %}
+
+{% assign contexto = include.tema | default: page.layout %}
+
+{% assign cor = "amber" %} <!-- Padrão: Asfalto (layout 'livro') -->
+
+{% if contexto == "floresta" %}
+    {% assign cor = "emerald" %}
+{% elsif contexto == "sangue" %}
+    {% assign cor = "red" %}
+{% elsif contexto == "tech" %}
+    {% assign cor = "cyan" %}
+{% endif %}
+
+<aside class="my-12 bg-zinc-950 border border-{{ cor }}-900/40 p-6 md:p-8 glow-{{ cor }} rounded-sm">
+    <div class="font-tech text-{{ cor }}-500 text-xs tracking-[0.2em] uppercase font-bold mb-4 flex items-center gap-2">
+        <span class="text-{{ cor }}-500 text-lg leading-none">&gt;_</span>
+        {{ include.titulo }}
+    </div>
+    <div class="space-y-4 font-ui text-base md:text-lg text-zinc-300 border-l-2 border-{{ cor }}-800/60 pl-4">
+        {{ include.conteudo | markdownify }}
+    </div>
+</aside>

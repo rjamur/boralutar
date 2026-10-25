@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | O Livro</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --font-story: 'Lora', serif;
+            --font-ui: 'Inter', sans-serif;
+            --font-tech: 'Space Mono', monospace;
+        }
+        
+        body {
+            font-family: var(--font-story);
+            background-color: #020617; /* Um fundo levemente mais frio/escuro */
+            color: #d4d4d8; 
+        }
+
+        .font-ui { font-family: var(--font-ui); }
+        .font-tech { font-family: var(--font-tech); }
+
+        ::selection {
+            background-color: #10b981; /* emerald-500 */
+            color: #022c22; /* emerald-950 */
+        }
+
+        /* Estilização para o Markdown da Floresta */
+        .markdown-body p {
+            margin-bottom: 1.5rem;
+            line-height: 2;
+            font-size: 1.125rem;
+        }
+
+        @media (min-width: 768px) {
+            .markdown-body p { font-size: 1.25rem; }
+        }
+
+        .markdown-body h1 {
+            font-family: var(--font-ui);
+            font-weight: 900;
+            font-size: 2.25rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: -0.05em;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #10b981; /* emerald-500 */
+            padding-left: 1rem;
+        }
+
+        .markdown-body h2 {
+            font-family: var(--font-ui);
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: #34d399; /* emerald-400 */
+            text-transform: uppercase;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .markdown-body blockquote {
+            font-family: var(--font-ui);
+            border-left: 4px solid #065f46; /* emerald-800 */
+            background-color: rgba(6, 78, 59, 0.1);
+            padding: 1rem 1.25rem;
+            margin: 2rem 0;
+            color: #a7f3d0; /* emerald-200 */
+            font-style: italic;
+            border-radius: 0.125rem;
+        }
+
+        .markdown-body ul {
+            list-style-type: square;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #6ee7b7;
+        }
+
+        .markdown-body hr {
+            border-color: #064e3b; /* emerald-900 */
+            margin: 3rem 0;
+        }
+        
+        .glow-emerald { box-shadow: 0 0 35px rgba(16, 185, 129, 0.15); }
+    </style>
+</head>
+<body class="relative min-h-screen pb-24 selection:bg-emerald-500 selection:text-emerald-950">
+
+    <!-- Header Isolado para a Floresta -->
+    <header class="w-full py-6 px-4 border-b border-emerald-900/30 flex justify-center sticky top-0 bg-[#020617]/80 backdrop-blur-sm z-50">
+	    <a href={'/historias/' | relative_url}  class="font-tech text-emerald-600/70 text-sm tracking-widest hover:text-emerald-400 transition-colors uppercase flex items-center gap-2">
+            &larr; Voltar ao Sumário
+        </a>
+    </header>
+
+    <main class="max-w-2xl mx-auto px-5 sm:px-6 py-12 md:py-20">
+        <article>
+            <!-- Cabeçalho do Capítulo (Tema Floresta) -->
+            <header class="mb-14 border-b border-emerald-900/40 pb-10">
+                <div class="font-tech text-emerald-500 text-xs tracking-[0.2em] uppercase font-bold mb-4 flex items-center gap-2">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.8)]"></span>
+                    Fábula // {{ page.date | date: "%d/%m/%Y" }}
+                </div>
+                <h1 class="font-ui font-black text-4xl md:text-5xl text-white mb-6 leading-tight tracking-tighter uppercase">
+                    {{ page.title }}
+                </h1>
+                {% if page.subtitle %}
+                <p class="font-ui text-lg md:text-xl text-emerald-100/70 font-medium leading-relaxed border-l-4 border-emerald-600 pl-4 text-left">
+                    {{ page.subtitle }}
+                </p>
+                {% endif %}
+            </header>
+
+            <!-- Conteúdo Markdown Injetado -->
+            <div class="markdown-body text-zinc-300">
+                {{ content }}
+            </div>
+        </article>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="w-full border-t border-emerald-900/30 py-8 px-4 text-center mt-auto">
+        <p class="font-tech text-xs text-emerald-600/60 uppercase tracking-widest">
+            A floresta é densa. A tecnologia é o mapa.
+        </p>
+    </footer>
+
+</body>
+</html>

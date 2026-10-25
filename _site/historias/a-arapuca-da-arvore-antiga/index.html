@@ -1,1 +1,84 @@
-bora
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Arapuca Da Arvore Antiga</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --font-ui: 'Inter', sans-serif;
+            --font-tech: 'Space Mono', monospace;
+        }
+        
+        body {
+            font-family: var(--font-ui);
+            background-color: #09090b;
+            color: #e4e4e7;
+        }
+
+        .font-tech { font-family: var(--font-tech); }
+
+        ::selection {
+            background-color: #dc2626;
+            color: #ffffff;
+        }
+
+        .dossier-row {
+            transition: all 0.2s ease-in-out;
+            border-left: 4px solid transparent;
+        }
+        .dossier-row:hover {
+            background-color: #18181b;
+            border-left: 4px solid #dc2626;
+            padding-left: 1rem;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L54EQJ2N41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-L54EQJ2N41");
+    </script>
+</head>
+<body class="flex flex-col min-h-screen selection:bg-red-600 selection:text-white">
+
+    <header class="w-full border-b border-zinc-800 px-4 md:px-8 py-6 flex justify-between items-center bg-zinc-950 sticky top-0 z-40">
+        <a href="/" class="font-tech font-bold text-xl tracking-tighter uppercase text-zinc-500 hover:text-white transition-colors">
+            [Voltar_ao_Inicio]
+        </a>
+        <nav class="font-tech text-xs tracking-widest uppercase text-red-500 flex items-center gap-2">
+            <span class="w-2 h-2 bg-red-500 animate-pulse"></span>
+            <span>Diretório_Acessado</span>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-4 md:px-8 py-12 md:py-20">
+        <div class="max-w-4xl mx-auto">
+            bora
+
+        </div>
+    </main>
+
+    <footer class="w-full border-t border-zinc-800 px-4 md:px-8 py-10 mt-auto bg-zinc-950">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <p class="font-tech text-xs text-zinc-600 uppercase tracking-wider">
+                Sistema Operacional <span class="text-zinc-400">BoraLutar</span>
+            </p>
+            <p class="font-tech text-xs text-zinc-600 uppercase tracking-wider flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                Index_Atualizado
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
