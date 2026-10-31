@@ -36,14 +36,14 @@ permalink: /
                 </p>
             </a>
 
-            <!-- PILAR 2: A Trincheira (Ocupação) -->
-            <a href="#ocupacao" class="bg-brand-red border-4 border-brand-dark hover:bg-red-700 p-8 flex flex-col h-full group transition-all duration-300 brutalist-btn">
-                <div class="font-tech text-white text-sm mb-4 font-bold tracking-widest uppercase">// 02. A Trincheira</div>
+            <!-- PILAR 2: A Trincheira (Ocupações) -->
+            <a href="#ocupacoes" class="bg-brand-red border-4 border-brand-dark hover:bg-red-700 p-8 flex flex-col h-full group transition-all duration-300 brutalist-btn">
+                <div class="font-tech text-white text-sm mb-4 font-bold tracking-widest uppercase">// 02. As Trincheiras</div>
                 <h3 class="font-heading text-3xl font-bold text-white mb-4 uppercase tracking-tight">
-                    Ocupação Francisco Bernardo
+                    Frentes de Ocupação
                 </h3>
                 <p class="text-red-100 text-lg leading-relaxed mt-auto">
-                    A luta por moradia, a lona no asfalto e a construção do Novo Castelo de Tocas. O trator não cala a rua.
+                    A luta por moradia, a lona no asfalto e a retomada de prédios abandonados em Curitiba. O trator não cala a rua.
                 </p>
             </a>
 
@@ -62,19 +62,66 @@ permalink: /
     </div>
 </section>
 
-<!-- Resumo da Ocupação (Para não perder o que você já tinha) -->
-<section id="ocupacao" class="bg-white text-zinc-900 py-16 px-6 md:px-12 border-t-8 border-brand-dark">
-    <div class="max-w-4xl mx-auto text-center">
-        <h2 class="font-heading text-4xl md:text-5xl font-bold uppercase mb-6 text-zinc-900">
-            Nossa Nova Toca: <span class="text-brand-red">Alameda Augusto Stellfeld, 82</span>
-        </h2>
-        <p class="text-xl text-zinc-700 font-medium mb-8">
-            Tentaram nos varrer do mapa. Erraram. A resistência tem um novo endereço oficial. Ocupar prédio abandonado é cumprir a Constituição.
-        </p>
-        <div class="flex flex-col md:flex-row justify-center gap-4">
-            <a href="/ocupa/" class="bg-brand-dark hover:bg-zinc-800 text-white font-heading font-bold text-xl uppercase py-4 px-8 border-b-4 border-brand-red transition-colors w-full md:w-auto">
-                👉 Ver Diário da Ocupação
-            </a>
+<!-- FRENTES DE LUTA (Zumbi e Dandara + Francisco Bernardo) -->
+<section id="ocupacoes" class="bg-white py-20 px-6 md:px-12 border-t-8 border-brand-dark">
+    <div class="max-w-6xl mx-auto">
+        
+        <!-- Título da Seção -->
+        <div class="text-center mb-16">
+            <h2 class="font-heading text-5xl md:text-6xl font-black uppercase text-zinc-900 mb-6">
+                A Luta Tem <span class="text-brand-red">Dois Endereços</span>
+            </h2>
+            <p class="text-2xl text-zinc-700 font-medium max-w-3xl mx-auto">
+                Ocupar prédio abandonado é fazer o Estado cumprir a Constituição. Conheça as nossas trincheiras ativas de moradia social.
+            </p>
+        </div>
+
+        <!-- Grid das Ocupações (Meio a Meio Simétrico) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+            
+            <!-- CARD 1: Ocupação Zumbi e Dandara -->
+            <div class="bg-zinc-950 border-4 border-brand-dark flex flex-col h-full brutalist-btn shadow-[8px_8px_0px_0px_rgba(0,0,0,0.9)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all">
+                <div class="p-8 md:p-10 flex flex-col h-full">
+                    <div class="font-tech text-brand-red text-sm mb-4 font-bold tracking-widest uppercase flex items-center gap-2">
+                        <span class="w-2 h-2 bg-brand-red rounded-full animate-pulse"></span>
+                        Nova Retomada
+                    </div>
+                    <h3 class="font-heading text-4xl lg:text-5xl font-black text-white uppercase mb-4 leading-tight">
+                        Zumbi e Dandara
+                    </h3>
+                    <p class="font-tech text-zinc-400 text-sm mb-8 uppercase tracking-wide border-l-2 border-brand-red pl-3">
+                        📍 Antigo Juizado Especial Cível (Cabral)
+                    </p>
+                    <p class="text-zinc-300 text-xl leading-relaxed mb-10 flex-grow">
+                        Em frente à Casa da Mulher Brasileira, o povo julgou a própria causa. O prédio federal abandonado foi retomado para garantir o direito constitucional à moradia.
+                    </p>
+                    <a href="/zumbiedandara/" class="bg-brand-red hover:bg-red-700 text-white text-center font-heading font-bold text-xl lg:text-2xl uppercase py-5 px-6 border-b-4 border-red-900 transition-colors w-full mt-auto block">
+                        Ler o Manifesto &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 2: Ocupação Francisco Bernardo -->
+            <div class="bg-zinc-950 border-4 border-brand-dark flex flex-col h-full brutalist-btn shadow-[8px_8px_0px_0px_rgba(0,0,0,0.9)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all">
+                <div class="p-8 md:p-10 flex flex-col h-full">
+                    <div class="font-tech text-zinc-500 text-sm mb-4 font-bold tracking-widest uppercase">
+                        // Resistência Consolidada
+                    </div>
+                    <h3 class="font-heading text-4xl lg:text-5xl font-black text-white uppercase mb-4 leading-tight">
+                        Francisco Bernardo
+                    </h3>
+                    <p class="font-tech text-zinc-400 text-sm mb-8 uppercase tracking-wide border-l-2 border-zinc-600 pl-3">
+                        📍 Alameda Augusto Stellfeld, 82
+                    </p>
+                    <p class="text-zinc-300 text-xl leading-relaxed mb-10 flex-grow">
+                        Tentaram nos varrer do mapa. Erraram. A resistência ergueu um novo Castelo de Tocas no coração da cidade e o trator não vai nos calar.
+                    </p>
+                    <a href="/ocupa/" class="bg-white hover:bg-zinc-200 text-brand-dark text-center font-heading font-bold text-xl lg:text-2xl uppercase py-5 px-6 border-b-4 border-zinc-400 transition-colors w-full mt-auto block">
+                        Diário da Ocupação &rarr;
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
