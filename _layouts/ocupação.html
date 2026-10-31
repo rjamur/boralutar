@@ -1,0 +1,84 @@
+---
+layout: base
+---
+<!-- Estilos Específicos do Tema Ocupação (Sangue) -->
+<style>
+    body { background-color: #09090b; } /* Fundo ainda mais escuro */
+
+    ::selection {
+        background-color: #dc2626; /* red-600 */
+        color: #ffffff;
+    }
+
+    /* Estilização Mágica do Atalho {: .corte } - Tema Sangue */
+    blockquote.corte {
+        background-color: #000000; 
+        border: 1px solid rgba(153, 27, 27, 0.4); /* red-900/40 */
+        border-left: 4px solid #dc2626; /* red-600 */
+        padding: 2rem;
+        margin: 3rem 0;
+        box-shadow: 0 0 30px rgba(220, 38, 38, 0.15); /* glow vermelho */
+        font-style: normal; 
+    }
+    
+    blockquote.corte p:first-child {
+        font-family: var(--font-tech);
+        color: #ef4444; /* red-500 */
+        font-size: 0.85rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+    
+    blockquote.corte p:not(:first-child) {
+        font-family: var(--font-story);
+        color: #e4e4e7;
+        font-size: 1.15rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
+</style>
+
+<div class="relative min-h-screen pb-24 selection:bg-red-600 selection:text-white">
+    <!-- Hero Section -->
+    <header class="w-full border-b border-red-900/30 pt-20 pb-16 px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-red-600"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-red-900/20 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-3xl mx-auto relative z-10">
+            <div class="font-tech text-red-500 text-xs tracking-[0.2em] uppercase font-bold mb-6 flex items-center gap-2">
+                <span class="w-2 h-2 bg-red-600 rounded-full animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]"></span>
+                {{ page.badge | default: "Curitiba // Resistência" }}
+            </div>
+            
+            <h1 class="font-ui font-black text-5xl md:text-7xl text-white mb-6 leading-[1.1] tracking-tighter uppercase">
+                {{ page.title }}
+            </h1>
+            
+            <p class="font-ui text-xl md:text-2xl text-zinc-300 font-semibold mb-8 border-l-4 border-red-600 pl-5">
+                {{ page.subtitle }}
+            </p>
+            
+            <p class="font-story text-lg text-zinc-400 leading-relaxed">
+                {{ page.intro }}
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-6 py-12">
+        <!-- Aqui o Jekyll injeta a Literatura em Kramdown -->
+        <div class="markdown-body">
+            {{ content }}
+        </div>
+    </main>
+
+    <footer class="w-full border-t border-red-900/30 py-10 px-6 text-center mt-12 bg-black">
+        <p class="font-tech text-sm text-red-600/80 uppercase tracking-widest mb-2">
+            {{ page.title }}
+        </p>
+        <p class="font-ui text-xs text-zinc-500">
+            Curitiba, Paraná. Moradia digna é direito constitucional.
+        </p>
+    </footer>
+</div>
