@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- O título puxa o que você definir no Markdown, ou o nome do site se não houver -->
+    <title>{{ page.title | default: site.title }}</title>
+    
+    <!-- Tailwind CSS (Motor Visual) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fontes do Google Universais -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Variáveis de Fonte Universais -->
+    <style>
+        :root {
+            --font-story: 'Lora', serif;       /* Para a literatura/prosa */
+            --font-ui: 'Inter', sans-serif;    /* Para títulos e interface */
+            --font-tech: 'Space Mono', monospace; /* Para códigos e marcações tech */
+        }
+        
+        body {
+            /* Fallback padrão, os layouts filhos podem sobrescrever o fundo */
+            font-family: var(--font-ui);
+            background-color: #020617; 
+            color: #d4d4d8; 
+            margin: 0;
+            padding: 0;
+        }
+
+        .font-ui { font-family: var(--font-ui); }
+        .font-tech { font-family: var(--font-tech); }
+        .font-story { font-family: var(--font-story
