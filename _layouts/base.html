@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- O título puxa o que você definir no Markdown, ou o nome do site se não houver -->
     <title>{{ page.title | default: site.title }}</title>
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L54EQJ2N41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-L54EQJ2N41");
+    </script>
+
     <!-- Tailwind CSS (Motor Visual) -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -17,13 +26,12 @@
     <!-- Variáveis de Fonte Universais -->
     <style>
         :root {
-            --font-story: 'Lora', serif;       /* Para a literatura/prosa */
-            --font-ui: 'Inter', sans-serif;    /* Para títulos e interface */
-            --font-tech: 'Space Mono', monospace; /* Para códigos e marcações tech */
+            --font-story: 'Lora', serif;       
+            --font-ui: 'Inter', sans-serif;    
+            --font-tech: 'Space Mono', monospace; 
         }
         
         body {
-            /* Fallback padrão, os layouts filhos podem sobrescrever o fundo */
             font-family: var(--font-ui);
             background-color: #020617; 
             color: #d4d4d8; 
@@ -33,4 +41,12 @@
 
         .font-ui { font-family: var(--font-ui); }
         .font-tech { font-family: var(--font-tech); }
-        .font-story { font-family: var(--font-story
+        .font-story { font-family: var(--font-story); }
+    </style>
+</head>
+<body>
+    
+    {{ content }}
+
+</body>
+</html>
