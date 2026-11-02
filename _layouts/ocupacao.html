@@ -1,6 +1,7 @@
 ---
 layout: base
 ---
+
 <!-- Estilos Específicos do Tema Ocupação (Sangue) -->
 <style>
     body { background-color: #09090b; } /* Fundo ainda mais escuro */
@@ -13,17 +14,17 @@ layout: base
     /* Estilização Mágica do Atalho {: .corte } - Tema Sangue */
     blockquote.corte {
         background-color: #000000; 
-        border: 1px solid rgba(153, 27, 27, 0.4); /* red-900/40 */
-        border-left: 4px solid #dc2626; /* red-600 */
+        border: 1px solid rgba(153, 27, 27, 0.4); 
+        border-left: 4px solid #dc2626; 
         padding: 2rem;
         margin: 3rem 0;
-        box-shadow: 0 0 30px rgba(220, 38, 38, 0.15); /* glow vermelho */
+        box-shadow: 0 0 30px rgba(220, 38, 38, 0.15); 
         font-style: normal; 
     }
 
     blockquote.corte p:first-child {
         font-family: var(--font-tech);
-        color: #ef4444; /* red-500 */
+        color: #ef4444; 
         font-size: 0.85rem;
         letter-spacing: 0.2em;
         text-transform: uppercase;
@@ -40,56 +41,28 @@ layout: base
     }
 </style>
 
-<div class="relative min-h-screen pb-24 selection:bg-red-600 selection:text-white">
-    <!-- Hero Section -->
-    <header class="w-full border-b border-red-900/30 pt-20 pb-16 px-6 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-1 bg-red-600"></div>
-        <div class="absolute -top-24 -right-24 w-96 h-96 bg-red-900/20 rounded-full blur-3xl"></div>
+<div class="relative min-h-screen selection:bg-red-600 selection:text-white flex flex-col">
+    
+    <!-- O CONTEÚDO ENTRA LIVRE AQUI -->
+    <!-- Se for a Landing Page, ela usa a tela toda. Se for um texto, ele se ajusta. -->
+    <div class="flex-grow">
+        {{ content }}
+    </div>
 
-        <div class="max-w-3xl mx-auto relative z-10">
-            <div class="font-tech text-red-500 text-xs tracking-[0.2em] uppercase font-bold mb-6 flex items-center gap-2">
-                <span class="w-2 h-2 bg-red-600 rounded-full animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]"></span>
-                {{ page.badge | default: "Curitiba // Resistência" }}
+    <!-- O ESCUDO (Rodapé de Transparência e Proteção Legal) -->
+    <footer class="w-full bg-black border-t border-zinc-900 py-12 px-6 mt-16">
+        <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+
+            <!-- Assinatura visual sutil -->
+            <div class="font-tech text-[10px] text-zinc-700 tracking-[0.2em] uppercase font-bold mb-4">
+                // Código e Solidariedade
             </div>
 
-            <h1 class="font-ui font-black text-5xl md:text-7xl text-white mb-6 leading-[1.1] tracking-tighter uppercase">
-                {{ page.title }}
-            </h1>
-
-            <p class="font-ui text-xl md:text-2xl text-zinc-300 font-semibold mb-8 border-l-4 border-red-600 pl-5">
-                {{ page.subtitle }}
+            <!-- O Disclaimer Obrigatório Atualizado -->
+            <p class="font-ui text-xs text-zinc-600 leading-relaxed max-w-3xl">
+                <strong>Nota de Transparência:</strong> O site 'Bora Lutar' é uma iniciativa solidária e independente criada por Rafael Jamur. Esta página atua exclusivamente como uma ponte de apoio emergencial da sociedade civil. Não falamos em nome da Ocupação Zumbi e Dandara, da Ocupação Francisco Bernardo ou do Movimento Luta nos Bairros, Vilas e Favelas (MLB), nem respondemos oficial, financeira ou legalmente por eles. Nossa voz é autônoma; nosso compromisso é com a vida.
             </p>
 
-            <p class="font-story text-lg text-zinc-400 leading-relaxed">
-                {{ page.intro }}
-            </p>
         </div>
-    </header>
-
-    <main class="max-w-3xl mx-auto px-6 py-12">
-        <!-- Aqui o Jekyll injeta a Literatura em Kramdown -->
-        <div class="markdown-body">
-            {{ content }}
-        </div>
-    </main>
-
-
-<!-- O ESCUDO (Rodapé de Transparência e Proteção Legal) -->
-<footer class="w-full bg-black border-t border-zinc-900 py-12 px-6 mt-16">
-    <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
-        
-        <!-- Assinatura visual sutil -->
-        <div class="font-tech text-[10px] text-zinc-700 tracking-[0.2em] uppercase font-bold mb-4">
-            // Código e Solidariedade
-        </div>
-        
-        <!-- O Disclaimer Obrigatório Atualizado -->
-        <p class="font-ui text-xs text-zinc-600 leading-relaxed max-w-3xl">
-            <strong>Nota de Transparência:</strong> O site 'Bora Lutar' é uma iniciativa solidária e independente criada por Rafael Jamur. Esta página atua exclusivamente como uma ponte de apoio emergencial da sociedade civil. Não falamos em nome da Ocupação Zumbi e Dandara, da Ocupação Francisco Bernardo ou do Movimento Luta nos Bairros, Vilas e Favelas (MLB), nem respondemos oficial, financeira ou legalmente por eles. Nossa voz é autônoma; nosso compromisso é com a vida.
-        </p>
-        
-    </div>
-</footer>
-
-
+    </footer>
 </div>
