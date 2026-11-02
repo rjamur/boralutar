@@ -4,7 +4,7 @@ title: "Ocupação Zumbi e Dandara"
 subtitle: "Onde o Estado falhou, o povo julgou a própria causa e tomou o seu direito."
 badge: "Curitiba // Resistência"
 intro: "Em frente à Casa da Mulher Brasileira, próximo ao Terminal do Cabral, o antigo Juizado Especial Cível estava abandonado. O lugar histórico onde as causas são julgadas tornou-se um monumento ao descaso federal. Diante do abandono, nós julgamos a nossa própria causa. Retomamos o prédio para garantir o direito constitucional à moradia."
-permalink: /zumbiedandara/
+permalink: /zumbiedandara-historia/
 ---
 
 A luta por moradia não é um crime; é o resgate da dignidade humana. O individualismo e a especulação imobiliária em Curitiba tentam criminalizar quem não consegue pagar aluguéis extorsivos, mas a ocupação de um imóvel público abandonado é um ato legítimo de defesa da vida. 
