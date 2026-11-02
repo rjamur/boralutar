@@ -42,15 +42,14 @@ layout: base
 </style>
 
 <div class="relative min-h-screen selection:bg-red-600 selection:text-white flex flex-col">
-    
+
     <!-- O CONTEÚDO ENTRA LIVRE AQUI -->
-    <!-- Se for a Landing Page, ela usa a tela toda. Se for um texto, ele se ajusta. -->
-    <div class="flex-grow">
+    <div class="flex-grow w-full">
         {{ content }}
     </div>
 
     <!-- O ESCUDO (Rodapé de Transparência e Proteção Legal) -->
-    <footer class="w-full bg-black border-t border-zinc-900 py-12 px-6 mt-16">
+    <footer class="w-full bg-black border-t border-zinc-900 py-12 px-6">
         <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
 
             <!-- Assinatura visual sutil -->
