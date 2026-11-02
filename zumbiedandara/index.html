@@ -20,14 +20,33 @@ permalink: /zumbiedandara/
             Dois prédios federais do INSS que apodreciam abandonados agora têm função social.
         </p>
 
-        <!-- O SEU TEXTO ENTRA AQUI -->
-        <p class="font-story text-xl text-zinc-400 leading-relaxed max-w-3xl">
+        <!-- Texto de Impacto -->
+        <p class="font-story text-xl text-zinc-400 leading-relaxed max-w-3xl mb-12">
             Na Avenida Paraná, 775, bem no coração do bairro Cabral, de frente para a Casa da Mulher Brasileira e a poucos passos do Juizado Especial Cível, um prédio federal apodrecia. Enquanto a Justiça, ali do lado, julga papéis na área nobre da cidade, nós julgamos a urgência da fome e do frio. Um patrimônio público, que deveria servir ao povo, havia se tornado um monumento ao descaso no meio de um dos bairros mais caros de Curitiba. Diante do abandono, não pedimos licença. Retomamos as Duas Torres para garantir, na carne e no concreto, o nosso direito constitucional à moradia.
         </p>
+
+        <!-- CORTESIA VISUAL: O Vídeo do Dia D -->
+        <div class="border-4 border-zinc-800 shadow-[8px_8px_0px_0px_rgba(220,38,38,0.5)] bg-black p-2 mb-12 max-w-3xl">
+            <div class="font-tech text-zinc-500 text-xs tracking-[0.2em] uppercase font-bold mb-2 ml-2">
+                // Registro em Vídeo
+            </div>
+            <!-- Troque o ID_DO_SEU_VIDEO pelo código real do YouTube -->
+            <div class="aspect-video w-full">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/ID_DO_SEU_VIDEO" title="Retomada Zumbi e Dandara" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- A Foto de Choque -->
+        <figure class="relative group cursor-crosshair max-w-3xl">
+            <div class="absolute inset-0 bg-red-600 mix-blend-multiply opacity-20 group-hover:opacity-0 transition-opacity duration-500"></div>
+            <!-- Lembre de colocar a foto otimizada nesta pasta -->
+            <img src="{{ '/assets/images/ocupacao/foto-impacto.webp' | relative_url }}" alt="Famílias retomando o prédio" class="w-full border-4 border-zinc-800 grayscale group-hover:grayscale-0 transition-all duration-500">
+            <figcaption class="font-tech text-xs text-zinc-400 mt-3 border-l-2 border-red-600 pl-2 uppercase">
+                O asfalto testemunhou: a ocupação do antigo Juizado.
+            </figcaption>
+        </figure>
     </div>
 </header>
-
-<!-- Restante do código: Vídeo, Foto, Botões do PIX e Links de Navegação continuam aqui embaixo... -->
 
 
 <!-- SEÇÃO DE DOAÇÃO: Zero Fricção -->
@@ -74,16 +93,25 @@ permalink: /zumbiedandara/
     </div>
 </main>
 
+
 <!-- NAVEGAÇÃO EDUCATIVA -->
 <nav class="w-full bg-zinc-950 py-12 px-6 border-t-2 border-zinc-900">
-    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/zumbiedandara/a-ocupacao" class="border border-zinc-800 p-6 hover:border-red-600 transition-colors">
-            <h4 class="font-ui font-bold text-white uppercase mb-2">O que é a Ocupação? &rarr;</h4>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+        
+        <a href="/zumbiedandara/a-ocupacao" class="border border-zinc-800 p-6 hover:border-red-600 transition-colors group">
+            <h4 class="font-ui font-bold text-white uppercase mb-2 group-hover:text-red-500 transition-colors">O que é a Ocupação? &rarr;</h4>
             <p class="text-zinc-500 font-story">Entenda a legalidade e a função social da propriedade.</p>
         </a>
-        <a href="/zumbiedandara/deveres-humanos" class="border border-zinc-800 p-6 hover:border-red-600 transition-colors">
-            <h4 class="font-ui font-bold text-white uppercase mb-2">Os Deveres Humanos &rarr;</h4>
+        
+        <a href="/zumbiedandara/deveres-humanos" class="border border-zinc-800 p-6 hover:border-red-600 transition-colors group">
+            <h4 class="font-ui font-bold text-white uppercase mb-2 group-hover:text-red-500 transition-colors">Os Deveres Humanos &rarr;</h4>
             <p class="text-zinc-500 font-story">A base filosófica de José Saramago sobre a nossa responsabilidade coletiva.</p>
         </a>
+
+        <a href="/zumbiedandara/acervo" class="border border-zinc-800 p-6 hover:border-red-600 transition-colors bg-zinc-900 group">
+            <h4 class="font-ui font-bold text-red-500 uppercase mb-2 group-hover:text-red-400 transition-colors">Acervo Visual &rarr;</h4>
+            <p class="text-zinc-400 font-story">Galeria de fotos e registros em vídeo da retomada do prédio.</p>
+        </a>
+
     </div>
 </nav>
