@@ -41,7 +41,7 @@ permalink: /
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             <!-- Botão Apoia.se -->
-            <a href="https://apoia.se/seu-link-aqui" target="_blank" rel="noopener" class="bg-red-700 hover:bg-red-800 text-white text-left p-8 border-b-8 border-red-950 transition-transform hover:-translate-y-1 group flex flex-col justify-between">
+            <a href="https://apoia.se/ocupafrancisco" target="_blank" rel="noopener" class="bg-red-700 hover:bg-red-800 text-white text-left p-8 border-b-8 border-red-950 transition-transform hover:-translate-y-1 group flex flex-col justify-between">
                 <div>
                     <div class="font-tech text-red-300 text-sm font-bold tracking-widest uppercase mb-2">
                         // Sustentação
