@@ -104,6 +104,22 @@ permalink: /
         </h3>
         
         <div class="flex flex-col gap-4">
+        
+        
+        <!-- DESTAQUE: A Vida na Ocupação -->
+<a href="/zumbiedandara/vida-comunitaria" class="border-2 border-green-800 p-6 hover:border-green-500 transition-colors group bg-zinc-950 hover:bg-zinc-900 mb-4 block relative overflow-hidden">
+    <div class="absolute top-0 right-0 bg-green-800 text-white font-tech text-xs px-2 py-1 uppercase font-bold">
+        Acervo Vivo
+    </div>
+    <h4 class="font-ui font-black text-2xl text-green-500 uppercase group-hover:text-green-400 transition-colors flex items-center justify-between">
+        O Dia a Dia da Trincheira: Conheça por Dentro <span>&rarr;</span>
+    </h4>
+    <p class="text-zinc-400 font-story mt-3 text-lg leading-relaxed">
+        Não é um acampamento, é uma comunidade. Veja as oficinas infantis, a cozinha coletiva, as assembleias populares e a construção de um espaço seguro e livre de machismo.
+    </p>
+</a>
+
+        
             <a href="/zumbiedandara/vila-domitila" class="border border-zinc-800 p-6 hover:border-red-600 transition-colors group bg-black hover:bg-zinc-900">
                 <h4 class="font-ui font-bold text-xl text-white uppercase group-hover:text-red-500 transition-colors flex items-center justify-between">
                     O Crime de Estado: A Tragédia da Vila Domitila <span>&rarr;</span>
