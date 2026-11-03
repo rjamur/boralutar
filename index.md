@@ -67,6 +67,31 @@ permalink: /
                 </div>
             </button>
 
+<!-- CTA TROMBETA (WhatsApp) -->
+<div class="mt-8 w-full">
+    <a href="https://chat.whatsapp.com/DhUAbECHZvAJhdJqZHVRXP" target="_blank" rel="noopener" class="block w-full bg-zinc-900 hover:bg-black p-8 md:p-10 border-l-8 border-green-600 border-y border-r border-zinc-800 transition-transform hover:-translate-y-1 group relative overflow-hidden">
+        
+        <!-- Detalhe visual de código -->
+        <div class="font-tech text-green-500 text-sm font-bold tracking-widest uppercase mb-4">
+            // Linha Direta de Ação
+        </div>
+        
+        <h3 class="font-ui font-black text-2xl md:text-3xl text-white uppercase mb-4 group-hover:text-green-400 transition-colors">
+            📢 OUVIR A TROMBETA: Entre no Grupo Silencioso de Avisos
+        </h3>
+        
+        <p class="font-story text-zinc-400 text-lg md:text-xl max-w-3xl">
+            Grupo fechado. Sem corrente, sem bom dia. Apenas convocações urgentes e boletins de resistência da Ocupação Zumbi e Dandara.
+        </p>
+        
+        <!-- Indicador de clique -->
+        <div class="mt-6 inline-block bg-zinc-800 group-hover:bg-green-900/30 px-4 py-2 font-ui text-sm font-bold uppercase tracking-wider text-green-500 border border-transparent group-hover:border-green-800 transition-all">
+            Entrar no Grupo &rarr;
+        </div>
+    </a>
+</div>
+
+
         </div>
     </div>
 </section>
