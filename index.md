@@ -4,7 +4,7 @@ title: "Ocupação Zumbi e Dandara (Palmares)"
 permalink: /
 ---
 
-<!-- HERO SECTION: O Manifesto pode ser MD porque tem essa tag -->
+<!-- HERO SECTION: O Manifesto pode ser MD porque tem essa tag  -->
 <header class="w-full pt-16 pb-12 px-6 border-b-8 border-red-700 bg-zinc-950">
     <div class="max-w-4xl mx-auto">
         <div class="font-tech text-red-500 text-sm tracking-[0.2em] uppercase font-bold mb-6 flex items-center gap-2">

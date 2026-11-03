@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Bora Lutar - Literatura, Resistência e Código"
-permalink: /
+permalink: /portal/
 ---
 
 <!-- Hero Section: A Síntese -->
