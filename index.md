@@ -53,19 +53,25 @@ permalink: /
                 </div>
             </a>
 
-            <!-- Botão PIX (Copy to Clipboard) -->
-            <button onclick="navigator.clipboard.writeText('mlbparana99@gmail.com'); alert('Chave PIX copiada com sucesso: mlbparana99@gmail.com');" class="bg-zinc-900 hover:bg-black text-white text-left p-8 border-b-8 border-red-600 transition-transform hover:-translate-y-1 group flex flex-col justify-between cursor-copy">
-                <div>
-                    <div class="font-tech text-red-500 text-sm font-bold tracking-widest uppercase mb-2 group-hover:text-red-400">
-                        // Transferência Imediata
-                    </div>
-                    <h3 class="font-ui font-black text-3xl uppercase mb-2">Copiar Chave PIX</h3>
-                    <p class="font-tech text-zinc-400 text-lg break-all">mlbparana99@gmail.com</p>
-                </div>
-                <div class="mt-6 inline-block bg-zinc-800 px-4 py-2 font-ui text-sm font-bold uppercase tracking-wider text-zinc-300 group-hover:bg-zinc-700 transition-colors">
-                    Clique para Copiar 📋
-                </div>
-            </button>
+<!-- Botão PIX (Copy to Clipboard) -->
+<button onclick="navigator.clipboard.writeText('mlbparana99@gmail.com'); alert('Chave copiada com sucesso!\n\nPara sua segurança: O recebedor no seu banco aparecerá como Andre Filippe dos Santos (Coordenador do MLB).');" class="bg-zinc-900 hover:bg-black text-white text-left p-8 border-b-8 border-red-600 transition-transform hover:-translate-y-1 group flex flex-col justify-between cursor-copy w-full">
+    <div>
+        <div class="font-tech text-red-500 text-sm font-bold tracking-widest uppercase mb-2 group-hover:text-red-400">
+            // Transferência Imediata
+        </div>
+        <h3 class="font-ui font-black text-3xl uppercase mb-2">Copiar Chave PIX</h3>
+        <p class="font-tech text-zinc-300 text-lg break-all mb-3">mlbparana99@gmail.com</p>
+        
+        <!-- Aviso de Transparência -->
+        <p class="font-story text-zinc-500 text-sm leading-tight border-l-2 border-zinc-700 pl-3">
+            O titular da conta será <strong>Andre Filippe dos Santos</strong>,<br>
+            Coordenador Estadual do MLB.
+        </p>
+    </div>
+    <div class="mt-6 inline-block bg-zinc-800 px-4 py-2 font-ui text-sm font-bold uppercase tracking-wider text-zinc-300 group-hover:bg-zinc-700 transition-colors">
+        Clique para Copiar 📋
+    </div>
+</button>
 
 <!-- CTA TROMBETA (WhatsApp) -->
 <div class="mt-8 w-full">
