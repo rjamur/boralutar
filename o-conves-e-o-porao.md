@@ -4,6 +4,7 @@ title_part1: "O Convés, o Porão e"
 title_highlight: "o Pedágio da Sobrevivência"
 back_link: "/"
 permalink: /zumbiedandara/conves-e-porao/
+date: 2026-11-09 16:20
 ---
 
 **A Cama do Morto e a Matemática da Trincheira**
