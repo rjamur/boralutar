@@ -1,5 +1,5 @@
 ---
-layout: ocupacao-md
+layout: historias
 title_part1: "O Convés, o Porão e"
 title_highlight: "o Pedágio da Sobrevivência"
 back_link: "/"

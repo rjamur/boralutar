@@ -72,7 +72,7 @@ permalink: /
         Clique para Copiar 📋
     </div>
 </button>
-
+    
 <!-- CTA TROMBETA (WhatsApp) -->
 <div class="mt-8 w-full">
     <a href="https://chat.whatsapp.com/DhUAbECHZvAJhdJqZHVRXP" target="_blank" rel="noopener" class="block w-full bg-zinc-900 hover:bg-black p-8 md:p-10 border-l-8 border-green-600 border-y border-r border-zinc-800 transition-transform hover:-translate-y-1 group relative overflow-hidden">
