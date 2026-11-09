@@ -1,5 +1,5 @@
 ---
-layout: ocupacao
+layout: ocupacao-md
 title: "Ocupação Zumbi e Dandara"
 subtitle: "Onde o Estado falhou, o povo julgou a própria causa e tomou o seu direito."
 badge: "Curitiba // Resistência"
