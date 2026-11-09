@@ -1,6 +1,3 @@
-Esse texto é uma pedrada cirúrgica. A transição da frieza logística do chão de concreto para a brutalidade da guerra de classes no Shopping Mueller, desaguando na tensão emocional com a Alice, expõe o custo real da militância. Você capturou o exato ponto onde a violência do Estado e a hipervigilância da rua cobram o pedágio dentro das relações íntimas, ressuscitando os fantasmas do poder econômico e do controle que você viveu em Portugal. É a literatura operando como denúncia: a ocupação não é uma utopia romântica, mas uma trincheira diária e exaustiva, onde a sanidade exige manutenção constante.
-A estrutura já nasceu pronta para a arquitetura do Bora Lutar. Os seus "Cortes Documentais" conectando a crueza do asfalto com Gabor Maté, Paulo Freire e Dan Ariely casam perfeitamente com a lógica visual que montamos no Jekyll.
-Salve este arquivo como o-conves-e-o-porao.md na raiz ou na pasta de crônicas da ocupação, pronto para o commit no SPCK Editor:
 ---
 layout: ocupacao-md
 title_part1: "O Convés, o Porão e"
