@@ -47,9 +47,11 @@ Então, o que nos resta? Resta-nos fazer a nossa Lista de Schindler. Resta-nos a
 
 Aqui estão as estacas da nossa Arca, que já estamos fincando na Ocupação Zumbi e Dandara:
 
-- **Segurança Alimentar Radicada no Chão:** A revolução hoje não é um textão no Twitter. A revolução é plantar batata, mandioca e alface. É a horta da ocupação. Se o algoritmo dominar a logística global, quem tem a semente e a terra tem a vida. Precisamos comer. Nossas crianças não podem morrer de fome enquanto o Vale do Silício tenta baixar a consciência humana num pen drive.
-- **Autonomia Energética (O Projeto Faísca):** Quem depende da tomada do Estado é refém do disjuntor do Estado. Baterias, painéis solares, carregadores mecânicos.
-- **Capital Social e a Trincheira Humana:** Paulo Freire nos ensinou que ninguém se salva sozinho, e Gabor Maté nos avisa que o isolamento é o solo fértil do trauma e do vício. Nós precisamos nos organizar em células de confiança, como estamos fazendo agora.
+* **Segurança Alimentar Radicada no Chão:** A revolução hoje não é um textão no Twitter. A revolução é plantar batata, mandioca e alface. É a horta da ocupação. Se o algoritmo dominar a logística global, quem tem a semente e a terra tem a vida. Precisamos comer. Nossas crianças não podem morrer de fome enquanto o Vale do Silício tenta baixar a consciência humana num pen drive.
+
+* **Autonomia Energética (O Projeto Faísca):** Quem depende da tomada do Estado é refém do disjuntor do Estado. Baterias, painéis solares, carregadores mecânicos.
+
+* **Capital Social e a Trincheira Humana:** Paulo Freire nos ensinou que ninguém se salva sozinho, e Gabor Maté nos avisa que o isolamento é o solo fértil do trauma e do vício. Nós precisamos nos organizar em células de confiança, como estamos fazendo agora.
 
 **O Jogo de Uno e a Resistência da Graça**
 
