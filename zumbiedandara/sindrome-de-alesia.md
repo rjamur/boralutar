@@ -4,6 +4,7 @@ title_part1: "A Síndrome de Alésia:"
 title_highlight: "O Moedor da Superinteligência"
 back_link: "/"
 permalink: /zumbiedandara/sindrome-de-alesia/
+date: 2026-11-11 10:00
 ---
 
 Nós estamos marchando de olhos vendados para o precipício, discutindo de quem é a culpa pela cor da venda.
