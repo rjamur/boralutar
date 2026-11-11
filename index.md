@@ -143,6 +143,23 @@ permalink: /
                     A Lei e a Proteção: O Rito do STF contra Despejos <span>&rarr;</span>
                 </h4>
             </a>
+            
+                        <!-- MANIFESTO DE ALÉSIA -->
+            <a href="/zumbiedandara/sindrome-de-alesia" class="mt-4 border-l-4 border-yellow-600 bg-zinc-900 p-8 hover:bg-black hover:border-yellow-500 transition-all group relative">
+                <div class="font-tech text-yellow-600 text-xs tracking-[0.2em] uppercase font-bold mb-3">
+                    // Documento de Posição
+                </div>
+                <h4 class="font-ui font-black text-2xl md:text-3xl text-white uppercase group-hover:text-yellow-500 transition-colors mb-3">
+                    A Síndrome de Alésia: O Moedor da Superinteligência
+                </h4>
+                <p class="text-zinc-400 font-story text-lg leading-relaxed max-w-3xl">
+                    Por que a esquerda e a direita brigam pelas pautas de ontem enquanto o Vale do Silício ergue um muro ao nosso redor? Entenda por que plantar, resistir e criar laços offline é o nosso único bote salva-vidas contra a IA.
+                </p>
+                <div class="mt-6 font-tech text-sm text-yellow-600 uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform">
+                    Ler o Manifesto <span class="text-lg">&rarr;</span>
+                </div>
+            </a>
+
         </div>
     </div>
 </nav>
