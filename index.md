@@ -163,3 +163,78 @@ permalink: /
         </div>
     </div>
 </nav>
+
+<!-- CRÔNICAS DA TRINCHEIRA: O Livro Vivo -->
+<section class="w-full bg-black py-16 px-6 border-t border-zinc-800">
+    <div class="max-w-4xl mx-auto">
+        <div class="font-tech text-zinc-500 text-sm tracking-[0.2em] uppercase font-bold mb-2">
+            // Diário de Bordo &amp; Filosofia do Asfalto
+        </div>
+        <h3 class="font-ui font-black text-3xl md:text-4xl text-white uppercase tracking-tight mb-4">
+            Crônicas da Trincheira
+        </h3>
+        <p class="font-story text-zinc-400 text-lg mb-10 max-w-2xl">
+            A ocupação sem filtro romântico. O custo emocional da luta, o choque com a máquina pública e o pensamento sistêmico escrito direto do chão de concreto.
+        </p>
+
+        <!-- Grid das 3 Crônicas -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Crônica 1 -->
+            <a href="/zumbiedandara/conves-e-porao/" class="bg-zinc-950 border border-zinc-800 hover:border-zinc-400 p-6 flex flex-col justify-between transition-all hover:-translate-y-1 group">
+                <div>
+                    <span class="font-tech text-xs text-zinc-500 uppercase tracking-widest block mb-3">
+                        01 // Sobrevivência
+                    </span>
+                    <h4 class="font-ui font-bold text-xl text-white uppercase group-hover:text-zinc-200 mb-3 leading-snug">
+                        O Convés, o Porão e o Pedágio da Sobrevivência
+                    </h4>
+                    <p class="font-story text-zinc-400 text-sm leading-relaxed">
+                        A cama do morto, a viatura na porta, o abismo do Shopping Mueller e o peso do poder econômico dentro dos afetos.
+                    </p>
+                </div>
+                <div class="mt-6 font-tech text-xs text-zinc-300 uppercase tracking-wider group-hover:translate-x-1 transition-transform">
+                    Ler Crônica &rarr;
+                </div>
+            </a>
+
+            <!-- Crônica 2 -->
+            <a href="/zumbiedandara/tribunal-do-asfalto/" class="bg-zinc-950 border border-zinc-800 hover:border-zinc-400 p-6 flex flex-col justify-between transition-all hover:-translate-y-1 group">
+                <div>
+                    <span class="font-tech text-xs text-zinc-500 uppercase tracking-widest block mb-3">
+                        02 // Academia
+                    </span>
+                    <h4 class="font-ui font-bold text-xl text-white uppercase group-hover:text-zinc-200 mb-3 leading-snug">
+                        O Exílio de Diógenes e o Tribunal do Asfalto
+                    </h4>
+                    <p class="font-story text-zinc-400 text-sm leading-relaxed">
+                        A piscina empoeirada da UFPR, o telhado de zinco que ferve os miolos e o veredito do Hacker Social contra a burocracia.
+                    </p>
+                </div>
+                <div class="mt-6 font-tech text-xs text-zinc-300 uppercase tracking-wider group-hover:translate-x-1 transition-transform">
+                    Ler Crônica &rarr;
+                </div>
+            </a>
+
+            <!-- Crônica 3 -->
+            <a href="/zumbiedandara/colchao-do-morto/" class="bg-zinc-950 border border-zinc-800 hover:border-zinc-400 p-6 flex flex-col justify-between transition-all hover:-translate-y-1 group">
+                <div>
+                    <span class="font-tech text-xs text-zinc-500 uppercase tracking-widest block mb-3">
+                        03 // Castelo de Tocas
+                    </span>
+                    <h4 class="font-ui font-bold text-xl text-white uppercase group-hover:text-zinc-200 mb-3 leading-snug">
+                        O Colchão do Morto e as Muralhas de Alésia
+                    </h4>
+                    <p class="font-story text-zinc-400 text-sm leading-relaxed">
+                        O direito ao descanso, Charles Darwin na assembleia e como evitar que a resistência vire uma nova Jerusalém em chamas.
+                    </p>
+                </div>
+                <div class="mt-6 font-tech text-xs text-zinc-300 uppercase tracking-wider group-hover:translate-x-1 transition-transform">
+                    Ler Crônica &rarr;
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
