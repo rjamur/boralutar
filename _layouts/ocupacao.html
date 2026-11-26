@@ -1,0 +1,67 @@
+---
+layout: base
+---
+
+<!-- Estilos Específicos do Tema Ocupação (Sangue) -->
+<style>
+    body { background-color: #09090b; } /* Fundo ainda mais escuro */
+
+    ::selection {
+        background-color: #dc2626; /* red-600 */
+        color: #ffffff;
+    }
+
+    /* Estilização Mágica do Atalho {: .corte } - Tema Sangue */
+    blockquote.corte {
+        background-color: #000000; 
+        border: 1px solid rgba(153, 27, 27, 0.4); 
+        border-left: 4px solid #dc2626; 
+        padding: 2rem;
+        margin: 3rem 0;
+        box-shadow: 0 0 30px rgba(220, 38, 38, 0.15); 
+        font-style: normal; 
+    }
+
+    blockquote.corte p:first-child {
+        font-family: var(--font-tech);
+        color: #ef4444; 
+        font-size: 0.85rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    blockquote.corte p:not(:first-child) {
+        font-family: var(--font-story);
+        color: #e4e4e7;
+        font-size: 1.15rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
+</style>
+
+<div class="relative min-h-screen selection:bg-red-600 selection:text-white flex flex-col">
+
+    <!-- O CONTEÚDO ENTRA LIVRE AQUI -->
+    <div class="flex-grow w-full">
+        {{ content }}
+    </div>
+
+    <!-- O ESCUDO (Rodapé de Transparência e Proteção Legal) -->
+    <footer class="w-full bg-black border-t border-zinc-900 py-12 px-6">
+        <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+
+            <!-- Assinatura visual sutil -->
+            <div class="font-tech text-[10px] text-zinc-700 tracking-[0.2em] uppercase font-bold mb-4">
+                // Código e Solidariedade
+            </div>
+
+            <!-- O Disclaimer Obrigatório Atualizado -->
+            <p class="font-ui text-xs text-zinc-600 leading-relaxed max-w-3xl">
+                <strong>Nota de Transparência:</strong> O site 'Bora Lutar' é uma iniciativa solidária e independente criada por Rafael Jamur. Esta página atua exclusivamente como uma ponte de apoio emergencial da sociedade civil. Não falamos em nome da Ocupação Zumbi e Dandara, da Ocupação Francisco Bernardo ou do Movimento Luta nos Bairros, Vilas e Favelas (MLB), nem respondemos oficial, financeira ou legalmente por eles. Nossa voz é autônoma; nosso compromisso é com a vida.
+            </p>
+
+        </div>
+    </footer>
+</div>
